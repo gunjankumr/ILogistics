@@ -62,6 +62,12 @@ public class CheckInCheckOutRepo {
         db.close(); // Closing database connection
     }
 
+    public void deleteAll() {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        db.delete(CheckInCheckOut.TABLE, "", null);
+        db.close(); // Closing database connection
+    }
+
     public void update(CheckInCheckOut record, CheckInOutType checkInOutType) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();

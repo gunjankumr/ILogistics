@@ -670,7 +670,7 @@ public class ProductListActivity extends DashBoardActivity implements OnGestureL
 	private void initiateDeliveryStatusUpdateForLocalDatabase() {
 		String cash = "0";
 		if (alertDialog != null) {
-			if(((EditText) alertDialog.findViewById(R.id.cashTxt)).getText().toString().trim().length() > 0) {
+			if (((EditText) alertDialog.findViewById(R.id.cashTxt)).getText().toString().trim().length() > 0) {
 				cash = ((EditText) alertDialog.findViewById(R.id.cashTxt)).getText().toString().trim();
 			}
 		}
@@ -678,7 +678,6 @@ public class ProductListActivity extends DashBoardActivity implements OnGestureL
 		updateDeliverStatusInDatabase(valueHolder.getUsername(),
 				Constants.DEVICE_ID,
 				valueHolder.getCompanyCode(),
-				problemListArr.size(),
 				valueHolder.getDeliveryDateNew(),
 				valueHolder.getRoutingCode(),
 				valueHolder.getDeliverySeqNew(),
@@ -690,7 +689,7 @@ public class ProductListActivity extends DashBoardActivity implements OnGestureL
 				cash);
 	}
 
-	private void updateDeliverStatusInDatabase(String username, String deviceID, String inCompany, int size,
+	private void updateDeliverStatusInDatabase(String username, String deviceID, String inCompany,
 		String inDeliveryDateNew, String inRoutingCode, String inDeliverySeqNew, String inCustCode, String inTRANSACTION_TYPE
 				,String inINV_BOOK, String inINV_NO, ArrayList<HashMap<String, String>> problemListArr, String cash) {
 
@@ -699,6 +698,9 @@ public class ProductListActivity extends DashBoardActivity implements OnGestureL
 			for (int i = 0; i < ILogisticsApplication.problemListArr.size(); i++) {
 				InvoiceInfo invoiceInfo = new InvoiceInfo();
 
+				invoiceInfo.username = username;
+				invoiceInfo.deviceId = deviceID;
+				invoiceInfo.company = inCompany;
 				invoiceInfo.routeCode = ILogisticsApplication.problemListArr.get(i).get("ROUTE_CODE");
 				invoiceInfo.customerCode = ILogisticsApplication.problemListArr.get(i).get("CUST_CODE");
 				invoiceInfo.transactionType = ILogisticsApplication.problemListArr.get(i).get("TRANSACTION_TYPE");
@@ -724,6 +726,9 @@ public class ProductListActivity extends DashBoardActivity implements OnGestureL
 			for (int i = 0; i < problemListArr.size(); i++) {
 				InvoiceInfo invoiceInfo = new InvoiceInfo();
 
+				invoiceInfo.username = username;
+				invoiceInfo.deviceId = deviceID;
+				invoiceInfo.company = inCompany;
 				invoiceInfo.routeCode = inRoutingCode;
 				invoiceInfo.customerCode = inCustCode;
 				invoiceInfo.transactionType = inTRANSACTION_TYPE;
@@ -771,7 +776,7 @@ public class ProductListActivity extends DashBoardActivity implements OnGestureL
 		btnComplete.setVisibility(View.INVISIBLE);
 		btnProblem.setVisibility(View.INVISIBLE);
 		btnHomeClickStatus(false);
-		if(ILogisticsApplication.problemListArr != null && ILogisticsApplication.problemListArr.size() > 0) {
+		if (ILogisticsApplication.problemListArr != null) {
 			ILogisticsApplication.problemListArr.clear();
 		}
 	}

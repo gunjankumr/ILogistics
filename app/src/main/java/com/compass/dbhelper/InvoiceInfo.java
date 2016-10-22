@@ -6,6 +6,9 @@ public class InvoiceInfo {
     public static final String TABLE = "InvoiceInfo";
 
     // Labels Table Columns names
+    public static final String KEY_USERNAME = "username";
+    public static final String KEY_DEVICE_ID = "device_id";
+    public static final String KEY_COMPANY = "company";
     public static final String KEY_ROUTE_CODE = "route_code";
     public static final String KEY_CUSTOMER_CODE = "customer_code";
     public static final String KEY_TRANSACTION_TYPE = "transaction_type";
@@ -26,6 +29,9 @@ public class InvoiceInfo {
     public static final String KEY_COMPLETED = "completed";
 
     // property help us to keep data
+    public String username = "";
+    public String deviceId = "";
+    public String company = "";
     public String routeCode = "";
     public String customerCode = "";
     public String transactionType = "";

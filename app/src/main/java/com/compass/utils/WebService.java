@@ -4,6 +4,7 @@ import com.google.common.base.Strings;
 
 import com.compass.activity.ILogisticsApplication;
 import com.compass.dbhelper.CheckInCheckOut;
+import com.compass.dbhelper.InvoiceInfo;
 import com.compass.model.CustomerModel;
 import com.compass.model.InvoiceModel;
 import com.compass.model.ProblemSet;
@@ -33,7 +34,6 @@ import java.net.UnknownHostException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -1723,6 +1723,123 @@ public class WebService {
         }
 	}
 
+	//new method to be called now
+	public ArrayList<HashMap<String, String>> updateDeliverStatusFromLocalDatabse(List<InvoiceInfo> list) throws UnknownHostException, Exception {
+
+		final String NAMESPACE = "http://tempuri.org/";
+		final String SOAP_ACTION = "http://tempuri.org/UpdateInvoiceProblem";
+		String METHOD_NAME = "UpdateInvoiceProblem";
+
+		SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME);
+
+		request.addProperty("inUsername", list.get(0).username);
+		request.addProperty("inDeviceID", list.get(0).deviceId);
+		request.addProperty("inCompany", list.get(0).company);
+
+		DateFormat inputFormat = new SimpleDateFormat("dd/MM/yyyy");
+		DateFormat outputFormat = new SimpleDateFormat("yyyyMMdd");
+		Date date = inputFormat.parse(list.get(0).deliveryDate);
+		String outputDateStr = outputFormat.format(date);
+		String inDeliveryDateNew = outputDateStr;
+
+		String json = "{\"INV_PROBLEM\":[";
+
+		String jsonRow ;
+
+		for (int i = 0; i < list.size(); i++) {
+			InvoiceInfo invoiceInfo = list.get(i);
+			jsonRow = "{";
+			jsonRow += "\"DELIVERY_DATE\":\""+inDeliveryDateNew+"\",";
+			jsonRow += "\"ROUTE\":\""+invoiceInfo.routeCode+"\",";
+			jsonRow += "\"DELIVERY_SEQ\":\""+invoiceInfo.deliverySeq+"\",";
+			jsonRow += "\"CUST_CODE\":\""+invoiceInfo.customerCode+"\",";
+			jsonRow += "\"TRANSACTION_TYPE\":\""+invoiceInfo.transactionType+"\",";
+			jsonRow += "\"INV_BOOK\":\""+invoiceInfo.invoiceBook+"\",";
+			jsonRow += "\"INV_NO\":\""+invoiceInfo.invoiceNumber+"\",";
+			jsonRow += "\"PRODUCT_SEQ\":\""+invoiceInfo.productSeq+"\",";
+			jsonRow += "\"PRODUCT_CODE\":\""+invoiceInfo.productCode+"\",";
+
+			if (!Strings.isNullOrEmpty(invoiceInfo.complainCode)) {
+				jsonRow += "\"COMPLAIN_CODE\":\"" + invoiceInfo.complainCode + "\",";
+			} else {
+				jsonRow += "\"COMPLAIN_CODE\":\""+""+"\",";
+			}
+
+			if (!Strings.isNullOrEmpty(invoiceInfo.remarkId)) {
+				jsonRow += "\"REM_ID\":\"" + invoiceInfo.remarkId + "\",";
+			} else {
+				jsonRow += "\"REM_ID\":\""+""+"\",";
+			}
+
+			jsonRow += "\"QTY\":\""+invoiceInfo.qtyReturn+"\",";
+			jsonRow += "\"UNIT\":\""+invoiceInfo.unit+"\",";
+
+			if (!Strings.isNullOrEmpty(invoiceInfo.remarkId)) {
+				jsonRow += "\"REMARKS\":\"" + invoiceInfo.remarks + "\",";
+			} else {
+				jsonRow += "\"REMARKS\":\""+""+"\",";
+			}
+
+			jsonRow += "\"WARE_CODE\":\""+invoiceInfo.wareCode+"\",";
+			jsonRow += "\"WARE_ZONE\":\""+invoiceInfo.wareZone+"\",";
+			jsonRow += "\"CASH_AMOUNT\":\""+invoiceInfo.cash+"\"},";
+			json += jsonRow;
+		}
+		//remove last "," from json string
+		json = json.substring(0, json.length() - 1);
+		json += "]}";
+
+		request.addProperty("inJson", json);
+
+		SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
+		envelope.dotNet = true;
+
+		envelope.setOutputSoapObject(request);
+		HttpTransportSE androidHttpTransport = new HttpTransportSE(Constants.URLJSON);
+		androidHttpTransport.debug = true;
+
+		ArrayList<HashMap<String, String>> responseList = new ArrayList<HashMap<String, String>>();
+		try {
+			androidHttpTransport.call(SOAP_ACTION, envelope);
+			SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
+			System.out.println(response);
+
+			String responseJSON = response.toString();
+
+			if(responseJSON != null) {
+				try {
+					JSONObject parent = new JSONObject(responseJSON);
+					JSONArray taskDetails = parent.getJSONArray("result");
+					String flag = taskDetails.getJSONObject(0).getString("FLAG").toString();
+					if (!flag.equals("1")) {
+						return responseList;
+					}
+
+					for (int i=0; i < taskDetails.length(); i++) {
+						HashMap<String, String> map;
+						map = new HashMap<String, String>();
+						map.put("FLAG",Utilities.getServiceString(taskDetails.getJSONObject(i).getString("FLAG").toString()));
+						map.put("MSG",Utilities.getServiceString(taskDetails.getJSONObject(i).getString("MSG").toString()));
+						responseList.add(map);
+					}
+				} catch (JSONException e) {
+					Log.e("Json Error", "Error: " + e.toString());
+					e.printStackTrace();
+				}
+			}
+
+			else if (envelope.bodyIn instanceof SoapFault) { // SoapFault = FAILURE
+				SoapFault soapFault = (SoapFault) envelope.bodyIn;
+				throw new Exception(soapFault.getMessage());
+			}
+			return responseList;
+		}catch(UnknownHostException e) {
+			throw e;
+		}catch(Exception e) {
+			throw e;
+		}
+	}
+
 	public String updateScan(String inDeliveryDate, String inRouteCode, String inDeliverySeq, HashMap<String,String> list) throws UnknownHostException,Exception {
 		String METHOD_NAME = "UpdateScan";
 		request = new SoapObject(Constants.NAMESPACE, METHOD_NAME);
@@ -2148,7 +2265,7 @@ public class WebService {
 
 	public ArrayList<HashMap<String, String>> CheckInAndOut(CheckInCheckOut dbRecord) throws Exception {
 		final String NAMESPACE = "http://tempuri.org/";
-		final String SOAP_ACTION = "http://tempuri.org/CheckIn";
+		final String SOAP_ACTION = "http://tempuri.org/CheckInAndOut";
 		String METHOD_NAME = "CheckInAndOut";
 		//inDeliveryDate = "12/09/2014 13:25";
 
@@ -2175,13 +2292,13 @@ public class WebService {
 		request.addProperty("inLng", dbRecord.longitude);
 
 		if (Long.parseLong(dbRecord.checkInTime) > 0) {
-			request.addProperty("inCheckIn", getFormattedDateTimeInYyyyMmDdHh24Mi(dbRecord.checkInTime));
+			request.addProperty("inCheckIn", Utilities.getFormattedDateTimeInYyyyMmDdHh24Mi(dbRecord.checkInTime));
 		} else {
 			request.addProperty("inCheckIn", "");
 		}
 
 		if (Long.parseLong(dbRecord.checkOutTime) > 0) {
-			request.addProperty("inCheckOut", getFormattedDateTimeInYyyyMmDdHh24Mi(dbRecord.checkOutTime));
+			request.addProperty("inCheckOut", Utilities.getFormattedDateTimeInYyyyMmDdHh24Mi(dbRecord.checkOutTime));
 		} else {
 			request.addProperty("inCheckOut", "");
 		}
@@ -2199,7 +2316,7 @@ public class WebService {
 			SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
 			System.out.println(response);
 
-			String responseJSON=response.toString();
+			String responseJSON = response.toString();
 
 			if (responseJSON != null) {
 				try {
@@ -2230,21 +2347,5 @@ public class WebService {
 		} catch(Exception e) {
 			throw e;
 		}
-	}
-
-	private String getFormattedDateTimeInYyyyMmDdHh24Mi(String dateStr) {
-		Date dateToBeParsed = null;
-		if (!Strings.isNullOrEmpty(dateStr) && Long.parseLong(dateStr) > 0) {
-			dateToBeParsed = new Date(Long.parseLong(dateStr));
-		}
-
-		// if still date object is null then initialise it with current system date
-		if (dateToBeParsed == null) {
-			dateToBeParsed = Calendar.getInstance().getTime();
-		}
-
-		DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd HH:mm");
-		String formattedDated = dateFormat.format(dateToBeParsed);
-		return formattedDated;
 	}
 }

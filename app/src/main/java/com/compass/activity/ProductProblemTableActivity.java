@@ -167,7 +167,8 @@ public class ProductProblemTableActivity extends DashBoardActivity {
     		((TextView) convertView.findViewById(R.id.textView1)).setText(productList.get(i).getPRODUCT_CODE());
     		((CheckBox) convertView.findViewById(R.id.textView2)).setChecked(false);
     		((TextView) convertView.findViewById(R.id.textView3)).setText(productList.get(i).getPRODUCT_NAME());
-    		((TextView) convertView.findViewById(R.id.textView5)).setText(productList.get(i).getQTY()+"  "+productList.get(i).getUNIT());
+    		((TextView) convertView.findViewById(R.id.textView5)).setText(productList.get(i).getQTY()+"  "+productList
+					.get(i).getUNIT());
     		((EditText) convertView.findViewById(R.id.textView6)).setText("");
     		((TextView) convertView.findViewById(R.id.textUnit)).setText(productList.get(i).getUNIT_CODE());
     		((TextView) convertView.findViewById(R.id.textSeq)).setText(productList.get(i).getPRODUCT_SEQ());
@@ -301,8 +302,11 @@ public class ProductProblemTableActivity extends DashBoardActivity {
 	    	    	map.put("QTY_RETURN", ((EditText)v.findViewById(R.id.textView6)).getText().toString());
 
 					String unit = ((TextView)v.findViewById(R.id.textView5)).getText().toString();
-					if (!Strings.isNullOrEmpty(unit) && unit.contains(" ")) {
-						unit = unit.split(" ")[1];
+					if (!Strings.isNullOrEmpty(unit)) {
+						String[] arrUnit = unit.split("  ");
+						if (arrUnit != null && arrUnit.length == 2) {
+							unit = arrUnit[1];
+						}
 					}
 	    	    	map.put("UNIT", unit);
 	    	    	//Toast.makeText(getApplicationContext(), "" +((Spinner)v.findViewById(R.id.textComplain)).getSelectedItemPosition(), Toast.LENGTH_SHORT).show();	    	    	

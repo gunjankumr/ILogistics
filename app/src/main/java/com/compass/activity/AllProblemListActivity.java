@@ -5,7 +5,16 @@ package com.compass.activity;
  * http://www.technotalkative.com
  */
 
-import java.util.ArrayList;
+import com.google.common.base.Strings;
+
+import com.compass.dbhelper.InvoiceInfo;
+import com.compass.dbhelper.InvoiceInfoRepo;
+import com.compass.ilogistics.R;
+import com.compass.model.CustomerModel;
+import com.compass.model.InvoiceModel;
+import com.compass.model.ProblemSet;
+import com.compass.model.ProductModel;
+import com.compass.utils.ValueHolder;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -20,11 +29,8 @@ import android.widget.Filter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.compass.ilogistics.R;
-import com.compass.model.CustomerModel;
-import com.compass.model.ProblemSet;
-import com.compass.model.ProductModel;
-import com.compass.utils.ValueHolder;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AllProblemListActivity extends DashBoardActivity {
 	
@@ -54,7 +60,10 @@ public class AllProblemListActivity extends DashBoardActivity {
         txtRight = (TextView)findViewById(R.id.right);
         planets = getResources().getStringArray(R.array.problem_array);
 
-        ArrayList<ProductModel> productList = new ArrayList<ProductModel>();
+		InvoiceInfoRepo repo = new InvoiceInfoRepo(this);
+		List<InvoiceInfo> localList = repo.getInvoiceList();
+
+		ArrayList<ProductModel> productList = new ArrayList<ProductModel>();
         for(int i=0; i<valueHolder.getCustomerList().size(); i++) {
 	        CustomerModel customer  = valueHolder.getCustomerList().get(i);
 			for(int j=0; j<customer.getInvoiceList().size(); j++) {
@@ -63,17 +72,51 @@ public class AllProblemListActivity extends DashBoardActivity {
 					
 					if(product.getPROBLEM_COMPLAIN() != null && !product.getPROBLEM_COMPLAIN().isEmpty() && product.getPROBLEM_COMPLAIN().length() > 0) {
 						productList.add(product);
+					} else {
+						InvoiceInfo invoiceInfo = getProblemListFromLocalDatabase(localList, product, customer
+								.CUST_CODE, customer.getInvoiceList().get(j));
+						if (invoiceInfo != null) {
+							product.setPROBLEM_COMPLAIN(invoiceInfo.complainCode);
+							product.setPROBLEM_REMARK(invoiceInfo.remarks);
+							product.setQTY_RETURN(invoiceInfo.qtyReturn);
+							productList.add(product);
+						}
 					}
-				}				
+				}
 			}
         }
-        
+
         txtRight.setText(valueHolder.getRoutingCode());
         dataAdapter = new ListAdapter(getApplicationContext(), R.layout.all_problem_item, productList);
         lstView.setAdapter(dataAdapter);
         lstView.setTextFilterEnabled(true);
 
     }
+
+	private InvoiceInfo getProblemListFromLocalDatabase(List<InvoiceInfo> localList, ProductModel product, String
+			custCode, InvoiceModel invoiceModel) {
+		if (localList != null && !localList.isEmpty()) {
+			for (int i = 0; i < localList.size(); i++) {
+				InvoiceInfo invoiceInfo = localList.get(i);
+				if (invoiceInfo != null && !Strings.isNullOrEmpty(invoiceInfo.complainCode)) {
+					if (invoiceInfo.customerCode.equalsIgnoreCase(custCode)
+						&& invoiceInfo.invoiceBook.equalsIgnoreCase(invoiceModel.getINV_BOOK())
+						&& invoiceInfo.invoiceNumber.equalsIgnoreCase(invoiceModel.getINV_NO())
+						&& !Strings.isNullOrEmpty(invoiceInfo.productCode)
+						&& invoiceInfo.productCode.equalsIgnoreCase(product.getPRODUCT_CODE())
+						&& !Strings.isNullOrEmpty(invoiceInfo.productSeq)
+						&& invoiceInfo.productSeq.equalsIgnoreCase(product.getPRODUCT_SEQ())
+						&& !Strings.isNullOrEmpty(invoiceInfo.routeCode)
+						&& invoiceInfo.routeCode.equalsIgnoreCase(valueHolder.getRoutingCode())) {
+						return invoiceInfo;
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+
     private String getComplainDescription(String probCode) {
     	if (valueHolder.getProblemList() != null 
     			&& valueHolder.getProblemList().size() > 0

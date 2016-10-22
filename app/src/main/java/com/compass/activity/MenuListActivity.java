@@ -5,11 +5,17 @@ package com.compass.activity;
  * http://www.technotalkative.com
  */
 
+import com.google.common.base.Strings;
+
 import com.compass.dbhelper.CheckInCheckOut;
 import com.compass.dbhelper.CheckInCheckOutRepo;
+import com.compass.dbhelper.InvoiceInfo;
+import com.compass.dbhelper.InvoiceInfoRepo;
 import com.compass.ilogistics.R;
 import com.compass.model.CustomerModel;
+import com.compass.model.InvoiceModel;
 import com.compass.model.Routing;
+import com.compass.utils.ConnectionDetector;
 import com.compass.utils.Constants;
 import com.compass.utils.ValueHolder;
 import com.compass.utils.WebService;
@@ -154,7 +160,8 @@ public class MenuListActivity extends DashBoardActivity {
 		map.put("menu_name", getString(R.string.route_job));
 		MyArrList.add(map);
 		
-		if(valueHolder.getMenuID().equalsIgnoreCase("menu_admin")) {
+		if (!Strings.isNullOrEmpty(valueHolder.getMenuID())
+		   && valueHolder.getMenuID().equalsIgnoreCase("menu_admin")) {
 			map = new HashMap<String, String>();
 			map.put("menu_id", "3");
 			map.put("menu_name", getString(R.string.view_invoice));
@@ -172,26 +179,7 @@ public class MenuListActivity extends DashBoardActivity {
 		map.put("menu_name", getString(R.string.scan_product));
 		MyArrList.add(map);
         */
-		
-		
-		int invoiceCount = 0, invComplete = 0, invProblem = 0, invNormal = 0;
-        for(int i=0; i<valueHolder.getCustomerList().size(); i++) {
-	        CustomerModel customer  = valueHolder.getCustomerList().get(i);
-			for(int j=0; j<customer.getInvoiceList().size(); j++) {
-				invoiceCount++;
-				if(customer.getInvoiceList().get(j).getINV_STATUS().equalsIgnoreCase("Y")) {
-					invComplete++;
-				}else if(customer.getInvoiceList().get(j).getINV_STATUS().equalsIgnoreCase("W")) {
-					invProblem++;
-				}else {
-					invNormal++;
-				}
-			}
-        }
-		completeStatus.setText(String.valueOf(invComplete)+ " " + getString(R.string.invoicecomp));
-		problemStatus.setText(String.valueOf(invProblem)+ " " + getString(R.string.invoiceprob));
-		normalStatus.setText(String.valueOf(invNormal)+ " " + getString(R.string.invoicenotcom));
-//		
+
 //        lstView.setAdapter(new ListMenuAdapter(this));
 
 //        lstView.setOnItemClickListener(new OnItemClickListener() {
@@ -221,8 +209,19 @@ public class MenuListActivity extends DashBoardActivity {
         getRoutingTask = new GetRoutingTask();
         getRoutingTask.execute();
     }
-    
-    public void onButtonClicker(View v)
+
+	@Override protected void onResume() {
+		super.onResume();
+
+		if (new ConnectionDetector(this).isConnectingToInternet()) {
+			syncLocalDataToServer();
+		}
+
+		updateInvoiceStatusFromLocalDatabase();
+		updateInvoiceTypeCountViews();
+	}
+
+	public void onButtonClicker(View v)
     { 	
     	switch (v.getId()) {
 		case R.id.btnDeliverMenu:
@@ -414,8 +413,7 @@ public class MenuListActivity extends DashBoardActivity {
         super.onDestroy();
     }
 
-
-	public void syncLocalData() {
+	public void syncLocalDataToServer() {
 		syncLocalCheckInCheckOutData();
 		syncLocalInvoiceStatusData();
 	}
@@ -437,11 +435,32 @@ public class MenuListActivity extends DashBoardActivity {
 	}
 
 	private void syncLocalInvoiceStatusData() {
+		InvoiceInfoRepo repo = new InvoiceInfoRepo(this);
+		List<InvoiceInfo> uniqueInvoiceList = repo.selectUniqueInvoiceInfo();
 
+		if (uniqueInvoiceList != null && !uniqueInvoiceList.isEmpty()) {
+			for (int i = 0; i < uniqueInvoiceList.size(); i++) {
+				InvoiceInfo uniqueInvInfo = uniqueInvoiceList.get(i);
+
+				if (uniqueInvInfo != null
+					&& !Strings.isNullOrEmpty(uniqueInvInfo.invoiceBook)
+					&& !Strings.isNullOrEmpty(uniqueInvInfo.invoiceNumber)) {
+
+					List<InvoiceInfo> problemList = repo.getInvoiceProblemList(uniqueInvInfo.invoiceBook,
+							uniqueInvInfo.invoiceNumber);
+					if (problemList != null
+						&& !problemList.isEmpty()) {
+						UploadInvoiceProblemList uploadInvoiceAsyncTask = new UploadInvoiceProblemList(problemList);
+						uploadInvoiceAsyncTask.execute();
+					}
+				}
+			}
+
+		}
 	}
 
 	private class CheckInCheckOutThread extends AsyncTask<String, String, String> {
-		ArrayList<HashMap<String, String>> serviceResponseListIn;
+		ArrayList<HashMap<String, String>> serviceResponseCheckInAndOut;
 		CheckInCheckOut checkInCheckOut;
 		boolean isRecordUploaded;
 
@@ -457,7 +476,7 @@ public class MenuListActivity extends DashBoardActivity {
 					publishProgress(CANCELLED); //Notify your activity that you had canceled the task
 					return (null); // don't forget to terminate this method
 				}
-				serviceResponseListIn = service.CheckInAndOut(checkInCheckOut);
+				serviceResponseCheckInAndOut = service.CheckInAndOut(checkInCheckOut);
 
 				publishProgress(SUCCESS); //if everything is Okay then publish this message, you may also use onPostExecute() method
 			} catch (UnknownHostException e) {
@@ -476,8 +495,8 @@ public class MenuListActivity extends DashBoardActivity {
 		protected void onProgressUpdate(String... errorCode) {
 			if (errorCode[0].toString().equalsIgnoreCase(SUCCESS)) {
 				int flag = 0 ;
-				for(int i = 0; i < serviceResponseListIn.size(); i++) {
-					flag = Integer.parseInt(serviceResponseListIn.get(i).get("FLAG").toString());
+				for(int i = 0; i < serviceResponseCheckInAndOut.size(); i++) {
+					flag = Integer.parseInt(serviceResponseCheckInAndOut.get(i).get("FLAG").toString());
 				}
 
 				if (flag == 1) {
@@ -495,12 +514,15 @@ public class MenuListActivity extends DashBoardActivity {
 		}
 	}
 
-	/*
-	private class CheckoutThread extends AsyncTask<String, String, String> {
-		protected void onPreExecute() {
-			dialog = ProgressDialog.show(InvoiceListActivity.this, "", getString(R.string.wait));
-			dialog.setCancelable(false);
+	private class UploadInvoiceProblemList extends AsyncTask<String, String, String> {
+		ArrayList<HashMap<String, String>> uploadResponse;
+		boolean isRecordUploaded;
+		List<InvoiceInfo> problemList;
+
+		public UploadInvoiceProblemList(List<InvoiceInfo> problemList) {
+			this.problemList = problemList;
 		}
+
 		@Override
 		protected String doInBackground(String... params) {
 			WebService service = new WebService();
@@ -509,76 +531,116 @@ public class MenuListActivity extends DashBoardActivity {
 					publishProgress(CANCELLED); //Notify your activity that you had canceled the task
 					return (null); // don't forget to terminate this method
 				}
-				serviceResponseListOut = service.checkOut(valueHolder.getUsername(),
-						Constants.DEVICE_ID,
-						valueHolder.getCompanyCode(),
-						valueHolder.getCustomerList().get(valueHolder.getCustomerSelected()).getCUST_CODE(),
-						valueHolder.getCustomerList().get(valueHolder.getCustomerSelected()).getBRANCH_CODE(),
-						valueHolder.getRoutingCode(),
-						valueHolder.getDeliverySeq(),
-						valueHolder.getDeliveryDate());
+
+				uploadResponse = service.updateDeliverStatusFromLocalDatabse(problemList);
+
 				publishProgress(SUCCESS); //if everything is Okay then publish this message, you may also use onPostExecute() method
 			} catch (UnknownHostException e) {
 				e.printStackTrace();
 				publishProgress(NETWORK_ERROR);
-			} catch (TimeoutException e) {
-				e.printStackTrace();
-				publishProgress(TIMEOUT);
 			} catch (Exception e) {
 				e.printStackTrace();
 				publishProgress(SERVER_ERROR);
 			}
 			return null;
 		}
+
 		@Override
 		protected void onProgressUpdate(String... errorCode) {
-			if(errorCode[0].toString().equalsIgnoreCase(CANCELLED)) {
-				dialog.dismiss();
-			}else if(errorCode[0].toString().equalsIgnoreCase(NETWORK_ERROR)) {
-				dialog.dismiss();
-				Toast.makeText(getApplicationContext(), "Network connection error",Toast.LENGTH_SHORT).show();
-			}else if(errorCode[0].toString().equalsIgnoreCase(SERVER_ERROR)) {
-				dialog.dismiss();
-				Toast.makeText(getApplicationContext(), "Server error",Toast.LENGTH_SHORT).show();
-			}else if(errorCode[0].toString().equalsIgnoreCase(TIMEOUT)) {
-				dialog.dismiss();
-				Toast.makeText(getApplicationContext(), "Service time out",Toast.LENGTH_SHORT).show();
-			}else if(errorCode[0].toString().equalsIgnoreCase(SUCCESS)) {
-				dialog.dismiss();
-
+			if(errorCode[0].toString().equalsIgnoreCase(SUCCESS)) {
 				int flag = 0 ;
-				String msg = null;
 
-				for(int i=0;i<serviceResponseListOut.size();i++) {
+				for (int i = 0; i < uploadResponse.size(); i++) {
+					flag = Integer.parseInt(uploadResponse.get(i).get("FLAG").toString());
+				}
 
-					flag = Integer.parseInt(serviceResponseListOut.get(i).get("FLAG").toString());
-					msg = serviceResponseListOut.get(i).get("MSG");
-				}
-				System.out.println(msg);
-				if(flag == 1)
-				{
-					session.setPreferenceVal("CHECKIN", "");
-					valueHolder.getCustomerList().get(valueHolder.getCustomerSelected()).setCHECKIN("N");
-					valueHolder.setLatitude("");
-					valueHolder.setLongitude("");
-					valueHolder.setCheckInTime("");
-					btnCheck.setText(getString(R.string.checkin));
-					Drawable drawableTop = getResources().getDrawable(R.drawable.flag_green32);
-					btnCheck.setCompoundDrawablesWithIntrinsicBounds(null, drawableTop , null, null);
-					btnCheck.setVisibility(View.INVISIBLE);
-//			        setHeader(getString(R.string.app_name), true, false, false);
-					btnHomeClickStatus(true);
-				}
-				else
-				{
-					Toast.makeText(getApplicationContext(), R.string.serviceFail,Toast.LENGTH_SHORT).show();
+				if (flag == 1) {
+					isRecordUploaded = true;
 				}
 			}
 		}
+
 		protected void onPostExecute(String result) {
+			if (isRecordUploaded) {
+				InvoiceInfoRepo invoiceInfoRepo = new InvoiceInfoRepo(MenuListActivity.this);
+				invoiceInfoRepo.delete(problemList.get(0));
+			}
 		}
 	}
-	*/
-    
+
+	private void updateInvoiceStatusFromLocalDatabase() {
+		InvoiceInfoRepo repo = new InvoiceInfoRepo(this);
+		List<InvoiceInfo> localList = repo.getInvoiceList();
+		if (localList != null
+			&& !localList.isEmpty()
+			&& valueHolder.getCustomerList() != null
+			&& !valueHolder.getCustomerList().isEmpty()) {
+
+			for (int i = 0; i < valueHolder.getCustomerList().size(); i++) {
+				if (valueHolder.getCustomerList().get(i).getInvoiceList() != null
+					&& !valueHolder.getCustomerList().get(i).getInvoiceList().isEmpty()) {
+					for (int j = 0; j < valueHolder.getCustomerList().get(i).getInvoiceList().size(); j++) {
+						InvoiceStatus invoiceStatus = getInvoiceStatus(localList,
+								valueHolder.getCustomerList().get(i).getInvoiceList().get(j));
+						if (invoiceStatus == InvoiceStatus.HAS_PROBLEM) {
+							valueHolder.getCustomerList().get(i).getInvoiceList().get(j).setINV_STATUS("W");
+						} else if (invoiceStatus == InvoiceStatus.COMPLETED) {
+							valueHolder.getCustomerList().get(i).getInvoiceList().get(j).setINV_STATUS("Y");
+						}
+					}
+				}
+			}
+		}
+	}
+
+	private InvoiceStatus getInvoiceStatus(List<InvoiceInfo> localList, InvoiceModel invoiceModel) {
+		InvoiceStatus invoiceStatus = InvoiceStatus.NOT_FOUND;
+
+		int hasProblem = 0;
+		boolean isFound = false;
+		for (int i = 0; i < localList.size(); i++) {
+
+			InvoiceInfo localInvoiceInfo = localList.get(i);
+			if (localInvoiceInfo != null
+				&& localInvoiceInfo.transactionType.equals(invoiceModel.TRANSACTION_TYPE)
+				&& localInvoiceInfo.invoiceBook.equals(invoiceModel.INV_BOOK)
+				&& localInvoiceInfo.invoiceNumber.equals(invoiceModel.INV_NO)) {
+
+				isFound = true;
+
+				if (!Strings.isNullOrEmpty(localInvoiceInfo.complainCode)) {
+					hasProblem ++;
+				}
+			}
+		}
+
+		if (!isFound) {
+			invoiceStatus = InvoiceStatus.NOT_FOUND;
+		} else if (isFound && hasProblem == 0) {
+			invoiceStatus = InvoiceStatus.COMPLETED;
+		} else if (isFound && hasProblem > 0) {
+			invoiceStatus = InvoiceStatus.HAS_PROBLEM;
+		}
+		return invoiceStatus;
+	}
+
+	private void updateInvoiceTypeCountViews() {
+		int invComplete = 0, invProblem = 0, invNormal = 0;
+		for (int i = 0; i < valueHolder.getCustomerList().size(); i++) {
+			CustomerModel customer = valueHolder.getCustomerList().get(i);
+			for (int j = 0; j < customer.getInvoiceList().size(); j++) {
+				if (customer.getInvoiceList().get(j).getINV_STATUS().equalsIgnoreCase("Y")) {
+					invComplete++;
+				} else if (customer.getInvoiceList().get(j).getINV_STATUS().equalsIgnoreCase("W")) {
+					invProblem++;
+				} else {
+					invNormal++;
+				}
+			}
+		}
+		completeStatus.setText(String.valueOf(invComplete) + " " + getString(R.string.invoicecomp));
+		problemStatus.setText(String.valueOf(invProblem) + " " + getString(R.string.invoiceprob));
+		normalStatus.setText(String.valueOf(invNormal) + " " + getString(R.string.invoicenotcom));
+	}
 }
 

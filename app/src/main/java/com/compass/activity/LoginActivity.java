@@ -477,7 +477,7 @@ public class LoginActivity extends Activity {
 				valueHolder.setCustomerList(serviceResponseList);
 				valueHolder.clearLocation();
 				if(serviceResponseList.size() > 0) {
-					updateInvoiceStatusFromLocalDatabase();
+//					updateInvoiceStatusFromLocalDatabase();
 					startActivity(new Intent(LoginActivity.this, MenuListActivity.class));
 					finish();
 				}else {

@@ -1,4 +1,4 @@
-#Sat Oct 22 18:04:45 ICT 2016
+#Sun Oct 23 05:20:55 ICT 2016
 base.0=/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.1=classes2.dex
 renamed.0=classes.dex

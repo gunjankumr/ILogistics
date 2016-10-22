@@ -21,6 +21,9 @@ public class InvoiceInfoRepo {
         //Open connection to write data
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues values = new ContentValues();
+        values.put(InvoiceInfo.KEY_USERNAME, record.username);
+        values.put(InvoiceInfo.KEY_DEVICE_ID, record.deviceId);
+        values.put(InvoiceInfo.KEY_COMPANY, record.company);
         values.put(InvoiceInfo.KEY_ROUTE_CODE, record.routeCode);
         values.put(InvoiceInfo.KEY_CUSTOMER_CODE,record.customerCode);
         values.put(InvoiceInfo.KEY_TRANSACTION_TYPE, record.transactionType);
@@ -50,26 +53,18 @@ public class InvoiceInfoRepo {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         // It's a good practice to use parameter ?, instead of concatenate string
         db.delete(InvoiceInfo.TABLE,
-                InvoiceInfo.KEY_DELIVERY_DATE + "= ? AND "+
-                InvoiceInfo.KEY_DELIVERY_SEQ + "= ? AND "+
-                InvoiceInfo.KEY_ROUTE_CODE + "= ? AND "+
-                InvoiceInfo.KEY_CUSTOMER_CODE + "= ? AND "+
                 InvoiceInfo.KEY_INVOICE_BOOK + "= ? AND "+
-                InvoiceInfo.KEY_INVOICE_NUMBER + "= ? AND "+
-                InvoiceInfo.KEY_PRODUCT_CODE + "= ? AND "+
-                InvoiceInfo.KEY_PRODUCT_SEQ + "= ? AND "+
-                InvoiceInfo.KEY_WARE_CODE + "= ? ",
+                InvoiceInfo.KEY_INVOICE_NUMBER + "= ? ",
                 new String[] {
-                        String.valueOf(record.deliveryDate),
-                        String.valueOf(record.deliverySeq),
-                        String.valueOf(record.routeCode),
-                        String.valueOf(record.customerCode),
                         String.valueOf(record.invoiceBook),
-                        String.valueOf(record.invoiceNumber),
-                        String.valueOf(record.productCode),
-                        String.valueOf(record.productSeq),
-                        String.valueOf(record.wareCode)
+                        String.valueOf(record.invoiceNumber)
                 });
+        db.close(); // Closing database connection
+    }
+
+    public void deleteAll() {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        db.delete(InvoiceInfo.TABLE, "", null);
         db.close(); // Closing database connection
     }
 
@@ -83,25 +78,13 @@ public class InvoiceInfoRepo {
         // It's a good practice to use parameter ?, instead of concatenate string
         db.update(InvoiceInfo.TABLE,
                 values,
-                InvoiceInfo.KEY_DELIVERY_DATE + "= ? AND "+
-                InvoiceInfo.KEY_DELIVERY_SEQ + "= ? AND "+
-                InvoiceInfo.KEY_ROUTE_CODE + "= ? AND "+
-                InvoiceInfo.KEY_CUSTOMER_CODE + "= ? AND "+
                 InvoiceInfo.KEY_INVOICE_BOOK + "= ? AND "+
                 InvoiceInfo.KEY_INVOICE_NUMBER + "= ? AND "+
-                InvoiceInfo.KEY_PRODUCT_CODE + "= ? AND "+
-                InvoiceInfo.KEY_PRODUCT_SEQ + "= ? AND "+
-                InvoiceInfo.KEY_WARE_CODE + "= ? ",
+                InvoiceInfo.KEY_PRODUCT_CODE + "= ? ",
                 new String[] {
-                        String.valueOf(record.deliveryDate),
-                        String.valueOf(record.deliverySeq),
-                        String.valueOf(record.routeCode),
-                        String.valueOf(record.customerCode),
                         String.valueOf(record.invoiceBook),
                         String.valueOf(record.invoiceNumber),
-                        String.valueOf(record.productCode),
-                        String.valueOf(record.productSeq),
-                        String.valueOf(record.wareCode)
+                        String.valueOf(record.productCode)
                 });
         db.close(); // Closing database connection
     }
@@ -111,75 +94,47 @@ public class InvoiceInfoRepo {
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery =  "SELECT  " +
-                              InvoiceInfo.KEY_DELIVERY_DATE + "," +
-                              InvoiceInfo.KEY_DELIVERY_SEQ + "," +
-                              InvoiceInfo.KEY_ROUTE_CODE + "," +
-                              InvoiceInfo.KEY_CUSTOMER_CODE + "," +
                               InvoiceInfo.KEY_INVOICE_BOOK + "," +
                               InvoiceInfo.KEY_INVOICE_NUMBER + "," +
-                              InvoiceInfo.KEY_PRODUCT_CODE + "," +
-                              InvoiceInfo.KEY_PRODUCT_SEQ + "," +
-                              InvoiceInfo.KEY_WARE_CODE +
+                              InvoiceInfo.KEY_PRODUCT_CODE +
                               " FROM " + InvoiceInfo.TABLE
                               + " WHERE " +
-                              InvoiceInfo.KEY_DELIVERY_DATE + "= ? AND "+
-                              InvoiceInfo.KEY_DELIVERY_SEQ + "= ? AND "+
-                              InvoiceInfo.KEY_ROUTE_CODE + "= ? AND "+
-                              InvoiceInfo.KEY_CUSTOMER_CODE + "= ? AND "+
                               InvoiceInfo.KEY_INVOICE_BOOK + "= ? AND "+
                               InvoiceInfo.KEY_INVOICE_NUMBER + "= ? AND "+
-                              InvoiceInfo.KEY_PRODUCT_CODE + "= ? AND "+
-                              InvoiceInfo.KEY_PRODUCT_SEQ + "= ? AND "+
-                              InvoiceInfo.KEY_WARE_CODE + "= ? ";
+                              InvoiceInfo.KEY_PRODUCT_CODE + "= ?";
 
         InvoiceInfo dbRecord = new InvoiceInfo();
 
         Cursor cursor = db.rawQuery(selectQuery,
                 new String[] {
-                        String.valueOf(record.deliveryDate),
-                        String.valueOf(record.deliverySeq),
-                        String.valueOf(record.routeCode),
-                        String.valueOf(record.customerCode),
                         String.valueOf(record.invoiceBook),
                         String.valueOf(record.invoiceNumber),
-                        String.valueOf(record.productCode),
-                        String.valueOf(record.productSeq),
-                        String.valueOf(record.wareCode)
+                        String.valueOf(record.productCode)
                 });
 
         if (cursor.moveToFirst()) {
             do {
-                dbRecord.deliveryDate = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_DELIVERY_DATE));
-                dbRecord.deliverySeq = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_DELIVERY_SEQ));
-                dbRecord.routeCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_ROUTE_CODE));
-                dbRecord.customerCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_CUSTOMER_CODE));
                 dbRecord.invoiceBook = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_INVOICE_BOOK));
                 dbRecord.invoiceNumber = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_INVOICE_NUMBER));
                 dbRecord.productCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_PRODUCT_CODE));
-                dbRecord.productSeq = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_PRODUCT_SEQ));
-                dbRecord.wareCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_WARE_CODE));
-
             } while (cursor.moveToNext());
         }
 
         cursor.close();
         db.close();
 
-        return record.deliveryDate.equals(dbRecord.deliveryDate)
-               && record.deliverySeq.equals(dbRecord.deliverySeq)
-               && record.routeCode.equals(dbRecord.routeCode)
-               && record.customerCode.equals(dbRecord.customerCode)
-               && record.invoiceBook.equals(dbRecord.invoiceBook)
+        return record.invoiceBook.equals(dbRecord.invoiceBook)
                && record.invoiceNumber.equals(dbRecord.invoiceNumber)
-               && record.productCode.equals(dbRecord.productCode)
-               && record.productSeq.equals(dbRecord.productSeq)
-               && record.wareCode.equals(dbRecord.wareCode);
+               && record.productCode.equals(dbRecord.productCode);
     }
 
     public List<InvoiceInfo> getInvoiceList() {
         //Open connection to read only
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery =  "SELECT " +
+                              InvoiceInfo.KEY_USERNAME + "," +
+                              InvoiceInfo.KEY_DEVICE_ID + "," +
+                              InvoiceInfo.KEY_COMPANY + "," +
                               InvoiceInfo.KEY_ROUTE_CODE + "," +
                               InvoiceInfo.KEY_CUSTOMER_CODE + "," +
                               InvoiceInfo.KEY_TRANSACTION_TYPE + "," +
@@ -208,6 +163,9 @@ public class InvoiceInfoRepo {
         if (cursor.moveToFirst()) {
             do {
                 InvoiceInfo dbRecord = new InvoiceInfo();
+                dbRecord.username = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_USERNAME));
+                dbRecord.deviceId = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_DEVICE_ID));
+                dbRecord.company = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_COMPANY));
                 dbRecord.routeCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_ROUTE_CODE));
                 dbRecord.customerCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_CUSTOMER_CODE));
                 dbRecord.transactionType = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_TRANSACTION_TYPE));
@@ -241,14 +199,11 @@ public class InvoiceInfoRepo {
         //Open connection to read only
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String selectQuery =  "SELECT " +
-                              InvoiceInfo.KEY_ROUTE_CODE + "," +
-                              InvoiceInfo.KEY_CUSTOMER_CODE + "," +
-                              InvoiceInfo.KEY_TRANSACTION_TYPE + "," +
                               InvoiceInfo.KEY_INVOICE_BOOK + "," +
                               InvoiceInfo.KEY_INVOICE_NUMBER +
                               " FROM " + InvoiceInfo.TABLE +
-                              " GROUP BY "+InvoiceInfo.KEY_INVOICE_BOOK
-                ;
+                              " GROUP BY "+InvoiceInfo.KEY_INVOICE_BOOK + "," +
+                              InvoiceInfo.KEY_INVOICE_NUMBER;
 
         List<InvoiceInfo> invoiceList = Lists.newArrayList();
 
@@ -258,6 +213,64 @@ public class InvoiceInfoRepo {
         if (cursor.moveToFirst()) {
             do {
                 InvoiceInfo dbRecord = new InvoiceInfo();
+                dbRecord.invoiceBook = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_INVOICE_BOOK));
+                dbRecord.invoiceNumber = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_INVOICE_NUMBER));
+
+                invoiceList.add(dbRecord);
+
+            } while (cursor.moveToNext());
+        }
+
+        cursor.close();
+        db.close();
+        return invoiceList;
+    }
+
+    public List<InvoiceInfo> getInvoiceProblemList(String invoiceBook, String invoiceNumber) {
+        //Open connection to read only
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        String selectQuery =  "SELECT " +
+                              InvoiceInfo.KEY_USERNAME + "," +
+                              InvoiceInfo.KEY_DEVICE_ID + "," +
+                              InvoiceInfo.KEY_COMPANY + "," +
+                              InvoiceInfo.KEY_ROUTE_CODE + "," +
+                              InvoiceInfo.KEY_CUSTOMER_CODE + "," +
+                              InvoiceInfo.KEY_TRANSACTION_TYPE + "," +
+                              InvoiceInfo.KEY_INVOICE_BOOK + "," +
+                              InvoiceInfo.KEY_INVOICE_NUMBER + "," +
+                              InvoiceInfo.KEY_PRODUCT_SEQ + "," +
+                              InvoiceInfo.KEY_PRODUCT_CODE + "," +
+                              InvoiceInfo.KEY_WARE_CODE + "," +
+                              InvoiceInfo.KEY_WARE_ZONE + "," +
+                              InvoiceInfo.KEY_QTY_RETURN + "," +
+                              InvoiceInfo.KEY_UNIT + "," +
+                              InvoiceInfo.KEY_COMPLAIN_CODE + "," +
+                              InvoiceInfo.KEY_REMARK_ID + "," +
+                              InvoiceInfo.KEY_REMARKS + "," +
+                              InvoiceInfo.KEY_DELIVERY_DATE + "," +
+                              InvoiceInfo.KEY_DELIVERY_SEQ + "," +
+                              InvoiceInfo.KEY_CASH + "," +
+                              InvoiceInfo.KEY_COMPLETED +
+                              " FROM " + InvoiceInfo.TABLE +
+                              " WHERE " +
+                              InvoiceInfo.KEY_INVOICE_BOOK + "= ? AND "+
+                              InvoiceInfo.KEY_INVOICE_NUMBER + "= ? ";
+
+        Cursor cursor = db.rawQuery(selectQuery,
+                new String[] {
+                        String.valueOf(invoiceBook),
+                        String.valueOf(invoiceNumber)
+                });
+
+        List<InvoiceInfo> invoiceList = Lists.newArrayList();
+
+        // looping through all rows and adding to list
+        if (cursor.moveToFirst()) {
+            do {
+                InvoiceInfo dbRecord = new InvoiceInfo();
+                dbRecord.username = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_USERNAME));
+                dbRecord.deviceId = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_DEVICE_ID));
+                dbRecord.company = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_COMPANY));
                 dbRecord.routeCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_ROUTE_CODE));
                 dbRecord.customerCode = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_CUSTOMER_CODE));
                 dbRecord.transactionType = cursor.getString(cursor.getColumnIndex(InvoiceInfo.KEY_TRANSACTION_TYPE));

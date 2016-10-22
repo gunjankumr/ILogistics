@@ -6,11 +6,71 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61bba0a3-a1eb-4144-8fc1-328322e284ed" name="Default" comment="" />
+    <list default="true" id="61bba0a3-a1eb-4144-8fc1-328322e284ed" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity$ListAdapter$CustomerFilter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity$ListAdapter$CustomerFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity$ListAdapter$ViewHolder.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity$ListAdapter$ViewHolder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity$ListAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity$ListAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/AllProblemListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetDailyRouteInfoByOTP$GetRouteSeq.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetDailyRouteInfoByOTP$GetRouteSeq.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetDailyRouteInfoByOTP.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetDailyRouteInfoByOTP.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetProblemList.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetProblemList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetRouteByPhoneNoTask$GetRouteSeq.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetRouteByPhoneNoTask$GetRouteSeq.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetRouteByPhoneNoTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetRouteByPhoneNoTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetRoutingTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity$GetRoutingTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/LoginActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$CheckInCheckOutThread.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$CheckInCheckOutThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$GetRoutingTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$GetRoutingTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$ListMenuAdapter.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity$ListMenuAdapter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/MenuListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductListActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductListActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$ProblemTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$ProblemTask.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$UpdateStatus.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity$UpdateStatus.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/activity/ProductProblemTableActivity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/CheckInCheckOutRepo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/CheckInCheckOutRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/DBHelper.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/DBHelper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/InvoiceInfo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/InvoiceInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/InvoiceInfoRepo.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/dbhelper/InvoiceInfoRepo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/utils/Utilities.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/utils/Utilities.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/utils/WebService.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/compass/utils/WebService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/multi-dex/debug/componentClasses.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/multi-dex/debug/componentClasses.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes2.dex" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/jarMerging/debug/jars/1/1f/combined.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/AllProblemListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/AllProblemListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/CheckInCheckOutRepo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/CheckInCheckOutRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/DBHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/DBHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfoRepo.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfoRepo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/utils/Utilities.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/utils/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java" />
+    </list>
     <ignored path="ILogistics.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -43,126 +103,7 @@
     <favorites_list name="ILogistics" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="1599" column="43" selection-start-line="1599" selection-start-column="43" selection-end-line="1599" selection-end-column="43" />
-              <folding>
-                <element signature="e#6936#6961#0" expanded="true" />
-                <element signature="e#11414#11439#0" expanded="true" />
-                <element signature="e#14212#14237#0" expanded="true" />
-                <element signature="e#17229#17254#0" expanded="true" />
-                <element signature="e#20595#20620#0" expanded="true" />
-                <element signature="e#24338#24353#0" expanded="true" />
-                <element signature="e#26128#26142#0" expanded="true" />
-                <element signature="e#27895#27909#0" expanded="true" />
-                <element signature="e#33434#33448#0" expanded="true" />
-                <element signature="e#38942#38956#0" expanded="true" />
-                <element signature="e#40813#40827#0" expanded="true" />
-                <element signature="e#46700#46714#0" expanded="true" />
-                <element signature="e#52208#52216#0" expanded="true" />
-                <element signature="e#55304#55314#0" expanded="true" />
-                <element signature="e#59661#59686#0" expanded="true" />
-                <element signature="e#64963#64988#0" expanded="true" />
-                <element signature="e#68163#68188#0" expanded="true" />
-                <element signature="e#74551#74563#0" expanded="true" />
-                <element signature="e#80844#80869#0" expanded="true" />
-                <element signature="e#95421#95446#0" expanded="true" />
-                <element signature="e#97908#97933#0" expanded="true" />
-                <element signature="e#105035#105060#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvoiceInfoRepo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfoRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="237" column="5" selection-start-line="237" selection-start-column="5" selection-end-line="237" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductProblemTableActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MenuListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="886">
-              <caret line="578" column="9" selection-start-line="578" selection-start-column="9" selection-end-line="578" selection-end-column="9" />
-              <folding>
-                <element signature="e#16640#16641#0" expanded="true" />
-                <element signature="e#16687#16688#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utilities.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/Utilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="114" column="41" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvoiceListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/InvoiceListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="324" column="29" selection-start-line="324" selection-start-column="22" selection-end-line="324" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoutingDetailListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/RoutingDetailListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="133" column="50" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckListTestActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/CheckListTestActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -171,6 +112,9 @@
         <option value="ASEnum" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="availableProjects">
@@ -2392,24 +2336,25 @@
       <list>
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/CheckInCheckOut.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/AsyncResponse.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/CheckInOutType.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/NetworkTimeAsyncResponse.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/DBHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/utils/Utilities.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/NetworkTimeReaderAsyncTask.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/CheckInCheckOutRepo.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/InvoiceListActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/InvoiceStatus.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/DBHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfoRepo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/CheckInCheckOutRepo.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/utils/Utilities.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/AllProblemListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java" />
       </list>
     </option>
   </component>
@@ -2443,8 +2388,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2465,7 +2408,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2662,6 +2604,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2670,11 +2615,13 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="device.picker.selection" value="03157df3f265803c" />
     <property name="show.do.not.ask.upgrade.gradle.plugin.version" value="2.2.1" />
-    <property name="SearchEverywhereHistoryKey" value="rout&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/RoutingDetailListActivity.java&#10;InvoiceList&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/InvoiceListActivity.java&#10;MenuListA&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/MenuListActivity.java&#10;menu&#9;PSI&#9;JAVA://com.compass.activity.MenuListActivity&#10;Splash&#9;PSI&#9;JAVA://com.compass.activity.SplashActivity" />
+    <property name="SearchEverywhereHistoryKey" value="InvoiceI&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/dbhelper/InvoiceInfoRepo.java&#10;Menu&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/MenuListActivity.java&#10;PPT&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java&#10;P&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/ProductProblemActivity.java&#10;DbHelper&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/dbhelper/DBHelper.java&#10;Problem&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java&#10;rout&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/RoutingDetailListActivity.java&#10;InvoiceList&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/InvoiceListActivity.java&#10;MenuListA&#9;FILE&#9;file:///Users/rkumar/Documents/compass/ILogistics/app/src/main/java/com/compass/activity/MenuListActivity.java&#10;menu&#9;PSI&#9;JAVA://com.compass.activity.MenuListActivity&#10;Splash&#9;PSI&#9;JAVA://com.compass.activity.SplashActivity" />
     <property name="DEBUGGABLE_DEVICE" value="samsung-sm_g920f-03157df3f265803c" />
     <property name="DEBUGGABLE_PROCESS" value="com.compass.ilogistics" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="ScreenshotViewer.SavePath" value="$USER_HOME$/Desktop" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -3124,30 +3071,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29194188" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43064728" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3989432" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3949802" sideWeight="0.49713877" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5627477" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19418758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2453505" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3159,91 +3106,120 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java</url>
-          <line>672</line>
+          <line>695</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java</url>
+          <line>509</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java</url>
+          <line>501</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java</url>
+          <line>2309</line>
+          <properties />
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java</url>
+          <line>2316</line>
+          <properties />
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java</url>
+          <line>2345</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java</url>
+          <line>2347</line>
+          <properties />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java</url>
+          <line>2266</line>
+          <properties />
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java</url>
-          <line>172</line>
+          <line>310</line>
           <properties />
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java</url>
-          <line>446</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java</url>
+          <line>330</line>
           <properties />
-          <option name="timeStamp" value="21" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java</url>
-          <line>81</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java</url>
+          <line>169</line>
           <properties />
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java</url>
-          <line>116</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java</url>
+          <line>303</line>
           <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java</url>
+          <line>534</line>
+          <properties />
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java</url>
+          <line>1728</line>
+          <properties />
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="25" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="73" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7035">
-          <caret line="506" column="16" selection-start-line="506" selection-start-column="16" selection-end-line="506" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5865">
-          <caret line="434" column="26" selection-start-line="434" selection-start-column="26" selection-end-line="434" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="163" column="64" selection-start-line="163" selection-start-column="60" selection-end-line="163" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/InvoiceListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10050">
-          <caret line="711" column="32" selection-start-line="711" selection-start-column="31" selection-end-line="711" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -3257,28 +3233,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6936#6961#0" expanded="true" />
-            <element signature="e#11414#11439#0" expanded="true" />
-            <element signature="e#14212#14237#0" expanded="true" />
-            <element signature="e#17229#17254#0" expanded="true" />
-            <element signature="e#20595#20620#0" expanded="true" />
-            <element signature="e#24338#24353#0" expanded="true" />
-            <element signature="e#26128#26142#0" expanded="true" />
-            <element signature="e#27895#27909#0" expanded="true" />
-            <element signature="e#33434#33448#0" expanded="true" />
-            <element signature="e#38942#38956#0" expanded="true" />
-            <element signature="e#40813#40827#0" expanded="true" />
-            <element signature="e#46700#46714#0" expanded="true" />
-            <element signature="e#52208#52216#0" expanded="true" />
-            <element signature="e#55304#55314#0" expanded="true" />
-            <element signature="e#59661#59686#0" expanded="true" />
-            <element signature="e#64963#64988#0" expanded="true" />
-            <element signature="e#68163#68188#0" expanded="true" />
-            <element signature="e#74551#74563#0" expanded="true" />
-            <element signature="e#80844#80869#0" expanded="true" />
-            <element signature="e#95421#95446#0" expanded="true" />
-            <element signature="e#97908#97933#0" expanded="true" />
-            <element signature="e#105035#105060#0" expanded="true" />
+            <element signature="e#85643#85668#0" expanded="true" />
+            <element signature="e#109381#109406#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3295,7 +3251,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5865">
           <caret line="434" column="26" selection-start-line="434" selection-start-column="26" selection-end-line="434" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#13191#13192#0" expanded="false" />
+            <element signature="e#13216#13217#0" expanded="false" />
+            <element signature="e#16969#16970#0" expanded="false" />
+            <element signature="e#16994#16995#0" expanded="false" />
+            <element signature="e#17134#17135#0" expanded="false" />
+            <element signature="e#17159#17160#0" expanded="false" />
+            <element signature="e#17228#17229#0" expanded="false" />
+            <element signature="e#17274#17275#0" expanded="false" />
+            <element signature="e#24208#24209#0" expanded="false" />
+            <element signature="e#24266#24267#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3303,7 +3271,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2070">
           <caret line="163" column="64" selection-start-line="163" selection-start-column="60" selection-end-line="163" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3311,7 +3278,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="15" column="34" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3327,10 +3293,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="54" column="51" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
-          <folding>
-            <element signature="e#523#524#0" expanded="false" />
-            <element signature="e#592#593#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3346,7 +3309,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3354,15 +3316,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="15" column="34" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
-          <caret line="163" column="64" selection-start-line="163" selection-start-column="60" selection-end-line="163" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3370,10 +3323,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#2053#2242#0" expanded="false" />
-            <element signature="e#2241#2242#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3381,15 +3330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Volumes/Macintosh_HD_2/Android/sdk/sources/android-23/android/database/sqlite/SQLiteDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="1492" column="15" selection-start-line="1492" selection-start-column="15" selection-end-line="1492" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3397,10 +3337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="155" column="11" selection-start-line="155" selection-start-column="11" selection-end-line="155" selection-end-column="11" />
-          <folding>
-            <element signature="e#5678#5679#0" expanded="false" />
-            <element signature="e#5722#5723#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3408,10 +3344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1407">
           <caret line="418" column="26" selection-start-line="418" selection-start-column="26" selection-end-line="418" selection-end-column="26" />
-          <folding>
-            <element signature="e#14262#14263#0" expanded="false" />
-            <element signature="e#14312#14313#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3419,7 +3351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-15">
           <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3427,7 +3358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-95">
           <caret line="749" column="25" selection-start-line="749" selection-start-column="25" selection-end-line="749" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3435,7 +3365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3443,7 +3372,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3451,7 +3379,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3463,29 +3390,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Volumes/Macintosh_HD_2/Android/sdk/sources/android-23/android/os/AsyncTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="639" column="25" selection-start-line="639" selection-start-column="25" selection-end-line="639" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/DBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="61" column="13" selection-start-line="61" selection-start-column="13" selection-end-line="61" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/NetworkTimeReaderAsyncTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="38" column="76" selection-start-line="38" selection-start-column="76" selection-end-line="38" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3497,35 +3405,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/CheckInCheckOutRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="138" column="9" selection-start-line="138" selection-start-column="9" selection-end-line="138" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/model/CustomerModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/model/ProductModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="587" column="34" selection-start-line="587" selection-start-column="34" selection-end-line="587" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3533,26 +3416,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="430">
           <caret line="349" column="54" selection-start-line="349" selection-start-column="54" selection-end-line="349" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/ValueHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="128" column="29" selection-start-line="128" selection-start-column="29" selection-end-line="128" selection-end-column="29" />
-          <folding>
-            <element signature="e#3158#3159#0" expanded="true" />
-            <element signature="e#3184#3185#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3560,7 +3423,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3568,47 +3430,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="114" column="41" selection-start-line="114" selection-start-column="41" selection-end-line="114" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/RoutingDetailListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="133" column="50" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/CheckListTestActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="113" column="9" selection-start-line="113" selection-start-column="9" selection-end-line="113" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3623,63 +3444,476 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/RoutingDetailListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="886">
-          <caret line="578" column="9" selection-start-line="578" selection-start-column="9" selection-end-line="578" selection-end-column="9" />
+        <state relative-caret-position="1560">
+          <caret line="133" column="50" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/CheckListTestActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="54" column="12" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
           <folding>
-            <element signature="e#16640#16641#0" expanded="true" />
-            <element signature="e#16687#16688#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/InvoiceListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-134">
-          <caret line="324" column="29" selection-start-line="324" selection-start-column="22" selection-end-line="324" selection-end-column="29" />
+        <state relative-caret-position="840">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/DBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Macintosh_HD_2/Android/sdk/sources/android-23/android/database/sqlite/SQLiteDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="1492" column="15" selection-start-line="1492" selection-start-column="15" selection-end-line="1492" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9930">
+          <caret line="713" column="91" selection-start-line="713" selection-start-column="91" selection-end-line="713" selection-end-column="91" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#13191#13192#0" expanded="false" />
+            <element signature="e#13216#13217#0" expanded="false" />
+            <element signature="e#16969#16970#0" expanded="false" />
+            <element signature="e#16994#16995#0" expanded="false" />
+            <element signature="e#17134#17135#0" expanded="false" />
+            <element signature="e#17159#17160#0" expanded="false" />
+            <element signature="e#17228#17229#0" expanded="false" />
+            <element signature="e#17274#17275#0" expanded="false" />
+            <element signature="e#24208#24209#0" expanded="false" />
+            <element signature="e#24266#24267#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2070">
+          <caret line="163" column="64" selection-start-line="163" selection-start-column="60" selection-end-line="163" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#8516#8517#0" expanded="false" />
+            <element signature="e#8574#8575#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Macintosh_HD_2/Android/sdk/sources/android-23/android/os/AsyncTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="639" column="25" selection-start-line="639" selection-start-column="25" selection-end-line="639" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/CheckInCheckOutRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
+            <element signature="e#454#455#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/ValueHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <folding>
+            <element signature="e#3370#3371#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Macintosh_HD_2/Android/sdk/sources/android-23/android/view/ViewGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="4149" column="0" selection-start-line="4149" selection-start-column="0" selection-end-line="4149" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Macintosh_HD_2/Android/sdk/sources/android-23/android/view/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="19673" column="0" selection-start-line="19673" selection-start-column="0" selection-end-line="19673" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Volumes/Macintosh_HD_2/Android/sdk/sources/android-23/android/widget/TextView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="1963" column="0" selection-start-line="1963" selection-start-column="0" selection-end-line="1963" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#380970#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#26586#26587#0" expanded="false" />
+            <element signature="e#26621#26622#0" expanded="false" />
+            <element signature="e#63358#63359#0" expanded="false" />
+            <element signature="e#63386#63387#0" expanded="false" />
+            <element signature="e#63531#63532#0" expanded="false" />
+            <element signature="e#63558#63559#0" expanded="false" />
+            <element signature="e#64096#64097#0" expanded="false" />
+            <element signature="e#64124#64125#0" expanded="false" />
+            <element signature="e#64246#64247#0" expanded="false" />
+            <element signature="e#64283#64284#0" expanded="false" />
+            <element signature="e#64496#64497#0" expanded="false" />
+            <element signature="e#64571#64572#0" expanded="false" />
+            <element signature="e#65170#65171#0" expanded="false" />
+            <element signature="e#65200#65201#0" expanded="false" />
+            <element signature="e#65358#65359#0" expanded="false" />
+            <element signature="e#65392#65393#0" expanded="false" />
+            <element signature="e#67602#67603#0" expanded="false" />
+            <element signature="e#67670#67671#0" expanded="false" />
+            <element signature="e#70320#70321#0" expanded="false" />
+            <element signature="e#70352#70353#0" expanded="false" />
+            <element signature="e#72139#72140#0" expanded="false" />
+            <element signature="e#72177#72178#0" expanded="false" />
+            <element signature="e#78447#78448#0" expanded="false" />
+            <element signature="e#78494#78495#0" expanded="false" />
+            <element signature="e#78647#78648#0" expanded="false" />
+            <element signature="e#78695#78696#0" expanded="false" />
+            <element signature="e#78848#78849#0" expanded="false" />
+            <element signature="e#78896#78897#0" expanded="false" />
+            <element signature="e#79043#79044#0" expanded="false" />
+            <element signature="e#79089#79090#0" expanded="false" />
+            <element signature="e#79345#79346#0" expanded="false" />
+            <element signature="e#79417#79418#0" expanded="false" />
+            <element signature="e#79682#79683#0" expanded="false" />
+            <element signature="e#79763#79764#0" expanded="false" />
+            <element signature="e#100322#100323#0" expanded="false" />
+            <element signature="e#100393#100394#0" expanded="false" />
+            <element signature="e#101636#101637#0" expanded="false" />
+            <element signature="e#101707#101708#0" expanded="false" />
+            <element signature="e#104215#104216#0" expanded="false" />
+            <element signature="e#104251#104252#0" expanded="false" />
+            <element signature="e#104886#104887#0" expanded="false" />
+            <element signature="e#104936#104937#0" expanded="false" />
+            <element signature="e#108087#108088#0" expanded="false" />
+            <element signature="e#108136#108137#0" expanded="false" />
+            <element signature="e#109075#109076#0" expanded="false" />
+            <element signature="e#109122#109123#0" expanded="false" />
+            <element signature="e#109329#109330#0" expanded="false" />
+            <element signature="e#109397#109398#0" expanded="false" />
+            <element signature="e#110354#110355#0" expanded="false" />
+            <element signature="e#110415#110416#0" expanded="false" />
+            <element signature="e#111520#111521#0" expanded="false" />
+            <element signature="e#111569#111570#0" expanded="false" />
+            <element signature="e#113255#113256#0" expanded="false" />
+            <element signature="e#113302#113303#0" expanded="false" />
+            <element signature="e#113747#113748#0" expanded="false" />
+            <element signature="e#113803#113804#0" expanded="false" />
+            <element signature="e#114043#114044#0" expanded="false" />
+            <element signature="e#114095#114096#0" expanded="false" />
+            <element signature="e#115025#115026#0" expanded="false" />
+            <element signature="e#115083#115084#0" expanded="false" />
+            <element signature="e#115974#115975#0" expanded="false" />
+            <element signature="e#116011#116012#0" expanded="false" />
+            <element signature="e#116859#116860#0" expanded="false" />
+            <element signature="e#116903#116904#0" expanded="false" />
+            <element signature="e#118986#118987#0" expanded="false" />
+            <element signature="e#119019#119020#0" expanded="false" />
+            <element signature="e#119214#119215#0" expanded="false" />
+            <element signature="e#119250#119251#0" expanded="false" />
+            <element signature="e#119864#119865#0" expanded="false" />
+            <element signature="e#119902#119903#0" expanded="false" />
+            <element signature="e#121940#121941#0" expanded="false" />
+            <element signature="e#121976#121977#0" expanded="false" />
+            <element signature="e#122206#122207#0" expanded="false" />
+            <element signature="e#122238#122239#0" expanded="false" />
+            <element signature="e#122466#122467#0" expanded="false" />
+            <element signature="e#122498#122499#0" expanded="false" />
+            <element signature="e#122734#122735#0" expanded="false" />
+            <element signature="e#122769#122770#0" expanded="false" />
+            <element signature="e#122956#122957#0" expanded="false" />
+            <element signature="e#122989#122990#0" expanded="false" />
+            <element signature="e#123299#123300#0" expanded="false" />
+            <element signature="e#123335#123336#0" expanded="false" />
+            <element signature="e#123751#123752#0" expanded="false" />
+            <element signature="e#123792#123793#0" expanded="false" />
+            <element signature="e#124161#124162#0" expanded="false" />
+            <element signature="e#124199#124200#0" expanded="false" />
+            <element signature="e#126083#126084#0" expanded="false" />
+            <element signature="e#126120#126121#0" expanded="false" />
+            <element signature="e#126331#126332#0" expanded="false" />
+            <element signature="e#126412#126413#0" expanded="false" />
+            <element signature="e#127584#127585#0" expanded="false" />
+            <element signature="e#127621#127622#0" expanded="false" />
+            <element signature="e#129184#129185#0" expanded="false" />
+            <element signature="e#129215#129216#0" expanded="false" />
+            <element signature="e#129362#129363#0" expanded="false" />
+            <element signature="e#129406#129407#0" expanded="false" />
+            <element signature="e#130744#130745#0" expanded="false" />
+            <element signature="e#130789#130790#0" expanded="false" />
+            <element signature="e#131617#131618#0" expanded="false" />
+            <element signature="e#131673#131674#0" expanded="false" />
+            <element signature="e#132437#132438#0" expanded="false" />
+            <element signature="e#132494#132495#0" expanded="false" />
+            <element signature="e#133231#133232#0" expanded="false" />
+            <element signature="e#133287#133288#0" expanded="false" />
+            <element signature="e#134135#134136#0" expanded="false" />
+            <element signature="e#134192#134193#0" expanded="false" />
+            <element signature="e#135932#135933#0" expanded="false" />
+            <element signature="e#135992#135993#0" expanded="false" />
+            <element signature="e#136676#136677#0" expanded="false" />
+            <element signature="e#136739#136740#0" expanded="false" />
+            <element signature="e#137412#137413#0" expanded="false" />
+            <element signature="e#137472#137473#0" expanded="false" />
+            <element signature="e#138155#138156#0" expanded="false" />
+            <element signature="e#138218#138219#0" expanded="false" />
+            <element signature="e#140237#140238#0" expanded="false" />
+            <element signature="e#140272#140273#0" expanded="false" />
+            <element signature="e#140628#140629#0" expanded="false" />
+            <element signature="e#140662#140663#0" expanded="false" />
+            <element signature="e#140898#140899#0" expanded="false" />
+            <element signature="e#140944#140945#0" expanded="false" />
+            <element signature="e#146870#147089#0" expanded="false" />
+            <element signature="e#147088#147089#0" expanded="false" />
+            <element signature="e#148002#148003#0" expanded="false" />
+            <element signature="e#148044#148045#0" expanded="false" />
+            <element signature="e#148310#148311#0" expanded="false" />
+            <element signature="e#148345#148346#0" expanded="false" />
+            <element signature="e#149532#149533#0" expanded="false" />
+            <element signature="e#149574#149575#0" expanded="false" />
+            <element signature="e#149918#149919#0" expanded="false" />
+            <element signature="e#149969#149970#0" expanded="false" />
+            <element signature="e#158255#158256#0" expanded="false" />
+            <element signature="e#158322#158323#0" expanded="false" />
+            <element signature="e#159507#159508#0" expanded="false" />
+            <element signature="e#159574#159575#0" expanded="false" />
+            <element signature="e#159810#159811#0" expanded="false" />
+            <element signature="e#159838#159839#0" expanded="false" />
+            <element signature="e#159868#159869#0" expanded="false" />
+            <element signature="e#159902#159903#0" expanded="false" />
+            <element signature="e#164198#164199#0" expanded="false" />
+            <element signature="e#164276#164277#0" expanded="false" />
+            <element signature="e#167857#167858#0" expanded="false" />
+            <element signature="e#167939#167940#0" expanded="false" />
+            <element signature="e#177694#177695#0" expanded="false" />
+            <element signature="e#177756#177757#0" expanded="false" />
+            <element signature="e#181597#181598#0" expanded="false" />
+            <element signature="e#181628#181629#0" expanded="false" />
+            <element signature="e#192381#192382#0" expanded="false" />
+            <element signature="e#192444#192445#0" expanded="false" />
+            <element signature="e#192684#192685#0" expanded="false" />
+            <element signature="e#192751#192752#0" expanded="false" />
+            <element signature="e#192811#192812#0" expanded="false" />
+            <element signature="e#192878#192879#0" expanded="false" />
+            <element signature="e#198018#198019#0" expanded="false" />
+            <element signature="e#198092#198093#0" expanded="false" />
+            <element signature="e#203618#203619#0" expanded="false" />
+            <element signature="e#203642#203643#0" expanded="false" />
+            <element signature="e#213193#213194#0" expanded="false" />
+            <element signature="e#213260#213261#0" expanded="false" />
+            <element signature="e#215451#215452#0" expanded="false" />
+            <element signature="e#215515#215516#0" expanded="false" />
+            <element signature="e#231899#231900#0" expanded="false" />
+            <element signature="e#231983#231984#0" expanded="false" />
+            <element signature="e#239365#239366#0" expanded="false" />
+            <element signature="e#239434#239435#0" expanded="false" />
+            <element signature="e#239470#239471#0" expanded="false" />
+            <element signature="e#239531#239532#0" expanded="false" />
+            <element signature="e#239565#239566#0" expanded="false" />
+            <element signature="e#239624#239625#0" expanded="false" />
+            <element signature="e#240604#240605#0" expanded="false" />
+            <element signature="e#240632#240633#0" expanded="false" />
+            <element signature="e#254163#254300#0" expanded="false" />
+            <element signature="e#254299#254300#0" expanded="false" />
+            <element signature="e#255890#255891#0" expanded="false" />
+            <element signature="e#255924#255925#0" expanded="false" />
+            <element signature="e#267975#267976#0" expanded="false" />
+            <element signature="e#268051#268052#0" expanded="false" />
+            <element signature="e#280789#280790#0" expanded="false" />
+            <element signature="e#280847#280848#0" expanded="false" />
+            <element signature="e#281924#281925#0" expanded="false" />
+            <element signature="e#281985#281986#0" expanded="false" />
+            <element signature="e#282146#282147#0" expanded="false" />
+            <element signature="e#282205#282206#0" expanded="false" />
+            <element signature="e#283079#283080#0" expanded="false" />
+            <element signature="e#283114#283115#0" expanded="false" />
+            <element signature="e#287254#287255#0" expanded="false" />
+            <element signature="e#287304#287305#0" expanded="false" />
+            <element signature="e#287733#287734#0" expanded="false" />
+            <element signature="e#287775#287776#0" expanded="false" />
+            <element signature="e#287981#287982#0" expanded="false" />
+            <element signature="e#288014#288015#0" expanded="false" />
+            <element signature="e#310777#310778#0" expanded="false" />
+            <element signature="e#310865#310866#0" expanded="false" />
+            <element signature="e#311201#311202#0" expanded="false" />
+            <element signature="e#311270#311271#0" expanded="false" />
+            <element signature="e#311807#311808#0" expanded="false" />
+            <element signature="e#311836#311837#0" expanded="false" />
+            <element signature="e#321118#321119#0" expanded="false" />
+            <element signature="e#321215#321216#0" expanded="false" />
+            <element signature="e#323249#323250#0" expanded="false" />
+            <element signature="e#323322#323323#0" expanded="false" />
+            <element signature="e#323535#323536#0" expanded="false" />
+            <element signature="e#323563#323564#0" expanded="false" />
+            <element signature="e#324095#324096#0" expanded="false" />
+            <element signature="e#324167#324168#0" expanded="false" />
+            <element signature="e#324452#324596#0" expanded="false" />
+            <element signature="e#324595#324596#0" expanded="false" />
+            <element signature="e#326644#326645#0" expanded="false" />
+            <element signature="e#326691#326692#0" expanded="false" />
+            <element signature="e#352080#352081#0" expanded="false" />
+            <element signature="e#352139#352140#0" expanded="false" />
+            <element signature="e#352164#352165#0" expanded="false" />
+            <element signature="e#352223#352224#0" expanded="false" />
+            <element signature="e#352817#352818#0" expanded="false" />
+            <element signature="e#352849#352850#0" expanded="false" />
+            <element signature="e#362123#362124#0" expanded="false" />
+            <element signature="e#362176#362177#0" expanded="false" />
+            <element signature="e#363777#363778#0" expanded="false" />
+            <element signature="e#363805#363806#0" expanded="false" />
+            <element signature="e#365330#365331#0" expanded="false" />
+            <element signature="e#365372#365373#0" expanded="false" />
+            <element signature="e#365460#365461#0" expanded="false" />
+            <element signature="e#365487#365488#0" expanded="false" />
+            <element signature="e#365579#365580#0" expanded="false" />
+            <element signature="e#365619#365620#0" expanded="false" />
+            <element signature="e#367778#367779#0" expanded="false" />
+            <element signature="e#367819#367820#0" expanded="false" />
+            <element signature="e#369104#369105#0" expanded="false" />
+            <element signature="e#369161#369162#0" expanded="false" />
+            <element signature="e#369215#369216#0" expanded="false" />
+            <element signature="e#369274#369275#0" expanded="false" />
+            <element signature="e#370331#370332#0" expanded="false" />
+            <element signature="e#370369#370370#0" expanded="false" />
+            <element signature="e#370408#370409#0" expanded="false" />
+            <element signature="e#370459#370460#0" expanded="false" />
+            <element signature="e#370513#370514#0" expanded="false" />
+            <element signature="e#370579#370580#0" expanded="false" />
+            <element signature="e#374233#374393#0" expanded="false" />
+            <element signature="e#374392#374393#0" expanded="false" />
+            <element signature="e#374457#374726#0" expanded="false" />
+            <element signature="e#374725#374726#0" expanded="false" />
+            <element signature="e#374792#375144#0" expanded="false" />
+            <element signature="e#375143#375144#0" expanded="false" />
+            <element signature="e#377663#377664#0" expanded="false" />
+            <element signature="e#377706#377707#0" expanded="false" />
+            <element signature="e#377735#377736#0" expanded="false" />
+            <element signature="e#377773#377774#0" expanded="false" />
+            <element signature="e#377809#377810#0" expanded="false" />
+            <element signature="e#377854#377855#0" expanded="false" />
+            <element signature="e#377894#377895#0" expanded="false" />
+            <element signature="e#377945#377946#0" expanded="false" />
+            <element signature="e#377982#377983#0" expanded="false" />
+            <element signature="e#378064#378065#0" expanded="false" />
+            <element signature="e#378095#378096#0" expanded="false" />
+            <element signature="e#378152#378153#0" expanded="false" />
+            <element signature="e#378183#378184#0" expanded="false" />
+            <element signature="e#378240#378241#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/ProductProblemTableActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="309" column="16" selection-start-line="309" selection-start-column="16" selection-end-line="309" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/utils/WebService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="1599" column="43" selection-start-line="1599" selection-start-column="43" selection-end-line="1599" selection-end-column="43" />
+        <state relative-caret-position="218">
+          <caret line="1833" column="13" selection-start-line="1833" selection-start-column="13" selection-end-line="1833" selection-end-column="13" />
           <folding>
-            <element signature="e#6936#6961#0" expanded="true" />
-            <element signature="e#11414#11439#0" expanded="true" />
-            <element signature="e#14212#14237#0" expanded="true" />
-            <element signature="e#17229#17254#0" expanded="true" />
-            <element signature="e#20595#20620#0" expanded="true" />
-            <element signature="e#24338#24353#0" expanded="true" />
-            <element signature="e#26128#26142#0" expanded="true" />
-            <element signature="e#27895#27909#0" expanded="true" />
-            <element signature="e#33434#33448#0" expanded="true" />
-            <element signature="e#38942#38956#0" expanded="true" />
-            <element signature="e#40813#40827#0" expanded="true" />
-            <element signature="e#46700#46714#0" expanded="true" />
-            <element signature="e#52208#52216#0" expanded="true" />
-            <element signature="e#55304#55314#0" expanded="true" />
-            <element signature="e#59661#59686#0" expanded="true" />
-            <element signature="e#64963#64988#0" expanded="true" />
-            <element signature="e#68163#68188#0" expanded="true" />
-            <element signature="e#74551#74563#0" expanded="true" />
-            <element signature="e#80844#80869#0" expanded="true" />
-            <element signature="e#95421#95446#0" expanded="true" />
-            <element signature="e#97908#97933#0" expanded="true" />
-            <element signature="e#105035#105060#0" expanded="true" />
+            <element signature="e#85643#85668#0" expanded="true" />
+            <element signature="e#109381#109406#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/Invoice_problem_screen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/model/ProductModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/AllProblemListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="110" column="43" selection-start-line="110" selection-start-column="43" selection-end-line="110" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/dbhelper/InvoiceInfoRepo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="237" column="5" selection-start-line="237" selection-start-column="5" selection-end-line="237" selection-end-column="5" />
+        <state relative-caret-position="73">
+          <caret line="130" column="36" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="43" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6225">
+          <caret line="480" column="59" selection-start-line="480" selection-start-column="59" selection-end-line="480" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2490">
+          <caret line="206" column="11" selection-start-line="206" selection-start-column="11" selection-end-line="206" selection-end-column="11" />
+          <folding>
+            <element signature="e#15234#15235#0" expanded="true" />
+            <element signature="e#15267#15268#0" expanded="true" />
+            <element signature="e#22769#22800#0" expanded="true" />
+            <element signature="e#22862#22893#0" expanded="true" />
+            <element signature="e#22953#22986#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

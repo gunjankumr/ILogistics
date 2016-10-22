@@ -1,5 +1,7 @@
 package com.compass.utils;
 
+import com.google.common.base.Strings;
+
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -9,6 +11,7 @@ import android.net.NetworkInfo;
 import android.widget.Toast;
 
 import java.io.InputStream;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -158,6 +161,22 @@ public class Utilities {
 		// return current system date
 		Date currentDateTime = Calendar.getInstance().getTime();
 		return currentDateTime.getTime();
+	}
+
+	public static String getFormattedDateTimeInYyyyMmDdHh24Mi(String dateStr) {
+		Date dateToBeParsed = null;
+		if (!Strings.isNullOrEmpty(dateStr) && Long.parseLong(dateStr) > 0) {
+			dateToBeParsed = new Date(Long.parseLong(dateStr));
+		}
+
+		// if still date object is null then initialise it with current system date
+		if (dateToBeParsed == null) {
+			dateToBeParsed = Calendar.getInstance().getTime();
+		}
+
+		DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd HH:mm");
+		String formattedDated = dateFormat.format(dateToBeParsed);
+		return formattedDated;
 	}
 
 }

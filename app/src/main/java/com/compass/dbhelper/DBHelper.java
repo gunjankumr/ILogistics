@@ -36,6 +36,9 @@ public class DBHelper extends SQLiteOpenHelper {
                 + CheckInCheckOut.KEY_CHECK_OUT_TIME + " TEXT )";
 
         String CREATE_TABLE_INVOICE_INFO = "CREATE TABLE " + InvoiceInfo.TABLE  + "("
+                + InvoiceInfo.KEY_USERNAME  + " TEXT,"
+                + InvoiceInfo.KEY_DEVICE_ID + " TEXT, "
+                + InvoiceInfo.KEY_COMPANY + " TEXT, "
                 + InvoiceInfo.KEY_ROUTE_CODE  + " TEXT,"
                 + InvoiceInfo.KEY_CUSTOMER_CODE + " TEXT, "
                 + InvoiceInfo.KEY_TRANSACTION_TYPE + " TEXT, "
