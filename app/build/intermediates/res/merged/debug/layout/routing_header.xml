@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+ 	android:layout_width="fill_parent" 
+ 	android:paddingTop="10dp"
+ 	android:paddingBottom="10dp"
+ 	android:orientation="horizontal">
+ 	
+ 	<!--android:background="@drawable/btn_white_glossy">-->
+ 	<TextView android:id="@+id/heading" 
+ 	    android:layout_width="0dp"
+  		android:layout_height="wrap_content" 
+  		android:paddingLeft="35sp"
+  		android:gravity="left"
+  		android:layout_weight="0.9"
+  		android:textStyle="bold"/>
+ 	
+ 	<Button
+        android:id="@+id/addbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Add"
+        android:textSize="12dp" />
+	<!-- 
+	<ImageView
+	    	android:id="@+id/cust"
+            android:contentDescription="@string/contentDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/arrowrighty"/>
+    -->
+    
+</LinearLayout>

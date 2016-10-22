@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-integration">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/android-integration.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/radialback">
+
+    <!-- Included header.xml here -->
+    <!-- 
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout="@layout/header"/>
+	-->
+	<ScrollView
+		  android:layout_width="fill_parent"
+		  android:layout_height="fill_parent"
+		  android:fillViewport="true"
+		  android:layout_gravity="center_vertical"
+		  android:background="@drawable/splash">
+		  <!-- 
+		  <LinearLayout
+			  android:orientation="vertical"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+			  android:layout_gravity="center_vertical"
+			  android:gravity="center">
+				  <LinearLayout
+			        android:orientation="horizontal"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+			         android:gravity="center">
+				        <Button android:id="@+id/menu_admin"
+				            style="@style/HomeButton"
+				            android:onClick="onButtonClicker"
+				            android:text="@string/menu_admin"
+				            android:textStyle="bold"
+				            android:textSize="20sp"
+				            android:typeface="serif"
+				            android:shadowColor="#000000"
+					        android:shadowDx="1"
+					        android:shadowDy="-1"
+					        android:shadowRadius="1"
+				            android:drawableTop="@drawable/menu_admin"/>
+				        <Button android:id="@+id/menu_contractor"
+				            style="@style/HomeButton"
+				            android:onClick="onButtonClicker"
+				            android:text="@string/menu_contractor"
+				            android:textStyle="bold"
+				            android:textSize="20sp"
+				            android:typeface="serif"
+				            android:shadowColor="#000000"
+					        android:shadowDx="1"
+					        android:shadowDy="-1"
+					        android:shadowRadius="1"
+				            android:drawableTop="@drawable/menu_contractor"/>
+				</LinearLayout>
+				<LinearLayout
+			        android:orientation="horizontal"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+			         android:gravity="center">
+				        <Button
+				            style="@style/HomeButton"
+				            android:onClick="onButtonClicker"
+				            android:text="Assign Route"
+				            android:textStyle="bold"
+				            android:textSize="20sp"
+				            android:typeface="serif"
+				            android:shadowColor="#000000"
+					        android:shadowDx="1"
+					        android:shadowDy="-1"
+					        android:shadowRadius="1"
+				            android:drawableTop="@drawable/menu_admin"/>
+				</LinearLayout>
+			</LinearLayout>
+			-->
+		    <LinearLayout
+		        android:orientation="horizontal"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content">
+		        <Button android:id="@+id/menu_admin"
+		            style="@style/HomeButton"
+		            android:onClick="onButtonClicker"
+		            android:text="@string/menu_admin"
+		            android:textStyle="bold"
+		            android:textSize="20sp"
+		            android:typeface="serif"
+		            android:shadowColor="#000000"
+			        android:shadowDx="1"
+			        android:shadowDy="-1"
+			        android:shadowRadius="1"
+		            android:drawableTop="@drawable/admin"/>
+		        <Button android:id="@+id/menu_contractor"
+		            style="@style/HomeButton"
+		            android:onClick="onButtonClicker"
+		            android:text="@string/menu_contractor"
+		            android:textStyle="bold"
+		            android:textSize="20sp"
+		            android:typeface="serif"
+		            android:shadowColor="#000000"
+			        android:shadowDx="1"
+			        android:shadowDy="-1"
+			        android:shadowRadius="1"
+		            android:drawableTop="@drawable/truck"/>
+		        
+		        <!-- 
+		        <Button android:id="@+id/menu_map"
+		            style="@style/HomeButton"
+		            android:onClick="onButtonClicker"
+		            android:text="MAP"
+		            android:textStyle="bold"
+		            android:textSize="20sp"
+		            android:typeface="serif"
+		            android:shadowColor="#000000"
+			        android:shadowDx="1"
+			        android:shadowDy="-1"
+			        android:shadowRadius="1"
+		            android:drawableTop="@drawable/truck"/>
+		        -->
+			</LinearLayout> 
+	</ScrollView>	
+</LinearLayout>

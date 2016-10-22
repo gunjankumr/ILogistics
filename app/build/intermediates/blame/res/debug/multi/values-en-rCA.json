@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 103,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/res/values-en-rCA/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 304,
+                        "endColumn": 103,
+                        "endOffset": 403
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 103,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/res/values-en-rCA/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 304,
+                        "endColumn": 103,
+                        "endOffset": 403
+                    }
+                }
+            }
+        ]
+    }
+]

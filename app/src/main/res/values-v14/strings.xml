@@ -1,0 +1,88 @@
+<resources>
+	
+    <string name="app_name">ILogistics</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">ILogistics</string>
+	<string name="contentDescription"></string>
+        
+    <!--  MENU  -->
+    <string name="menu">Menu</string>
+    <string name="menu_admin">Admin</string>
+    <string name="menu_contractor">Contractor</string>
+    <string name="menu_route">Route</string>
+     <string name="menu_phone">Phone</string>
+    <string name="menu_assign">Assign</string>
+    <string name="check_invoice">Check Invoice</string>
+    <string name="view_delivery">View Delivery</string>
+    <string name="route_job">Route Job</string>
+    <string name="view_invoice">View Invoice</string>
+    <string name="view_problem">View Problem</string>
+    <string name="scan_product">Scan Product</string>
+    
+	<!-- BUTTON -->
+	<string name="login">Login</string>
+    <string name="checkin">CHECK IN</string>
+    <string name="checkout">CHECK OUT</string>
+  	<string name="task">TASK</string>
+  	<string name="view">View</string>
+  	<string name="route_map">ROUTE MAP</string>
+  	<string name="map">VIEW MAP</string>
+  	<string name="complete">Complete</string>
+  	<string name="completeProblem">Save Problem</string>
+    <string name="save">Save</string>
+    <string name="remarkJobRoute">remark</string>
+   	<string name="delivermenu">Delivery</string>
+    <string name="documentmenu">Document</string>
+   	<string name="mapmenu">Map</string>
+   	<string name="specialjobmenu">Job</string>
+    <string name="problemmenu">Problem</string>
+    <string name="hotlinemenu">Hot Line</string>
+    
+    
+    <!-- TEXTVIEW PROMPT -->
+    <string name="date">Date</string>
+    <string name="otp">OTP</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="route">Route Code</string>
+    <string name="round">Round</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="cash">CASH</string>
+    <string name="problem">Problem</string>
+    <string name="appnameLogin">iLogistics</string>
+    <string name="companyNameLogin">JAGOTA</string>
+    
+    
+    <!-- MESSAGE -->
+    <string name="loginfail">username or password not correct</string>
+    <string name="serviceSuccess">Service Completed</string>
+    <string name="serviceFail">Service Fail</string>
+    <string name="wait">Please Wait..</string>
+    <string name="findLocation">Finding Location..</string>
+    <string name="confirm_invoice">Are you sure you want to complete?</string>
+    <string name="require_problem">PLEASE INSERT PROBLEM</string>
+    <string name="require_cash">Please input the cash amount received</string>
+    <string name="new_build">New build is available. Please click OK to download it.</string>
+    <string name="hotline_alert">Contact Jagota Logistics Hotline 0827905152</string>
+    <string name="hotline_call">Call</string>
+    <string name="hotline_cancel">Cancel</string>
+    <string name="checkout_loc">Please check out location</string>
+    <string name="appVersiontxt">Version</string>
+    
+    
+    
+    
+
+    <!--  HINT -->
+    <string name="search">Search</string>
+    
+    
+    
+    <string name="problem_prompt">Choose a problem</string>
+    <string-array name="problem_array">
+        <item>สินค้านํ้าหนักขาด (Weight Loss)</item>
+        <item>สินค้าไม่ใช่สเป็คที่ลูกค้าต้องการ</item>
+        <item>ลูกค้าแจ้งยกเลิก</item>
+    </string-array>
+    
+</resources>

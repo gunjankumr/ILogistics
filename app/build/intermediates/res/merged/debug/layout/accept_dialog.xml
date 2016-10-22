@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  android:background="@drawable/btn_white_matte">
+	    <ImageView
+	        android:contentDescription="@string/contentDescription"
+	        android:id="@+id/xClose"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:layout_margin="2dp"
+	        android:src="@drawable/symbol_delete32"/>
+    </LinearLayout>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="0dp"
+	    android:layout_weight="1">
+	    <RelativeLayout
+	        android:id="@+id/layout_root"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:focusableInTouchMode="true">
+	        
+	        <LinearLayout android:id="@+id/r0"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical">
+			  	<TextView android:id="@+id/infoTxt"
+			      	android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			        android:textSize="16sp"
+			        android:textColor="@android:color/black"
+			        android:textStyle="bold|italic"
+			        android:typeface="serif"
+			  		android:text="@string/confirm_invoice"/>
+			  	<TextView android:id="@+id/statusTxt"
+			      	android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:visibility="gone"/>
+			</LinearLayout>
+	        <LinearLayout android:id="@+id/r1"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:layout_marginTop="15dp"
+			  android:visibility="gone"
+			  android:layout_below="@+id/r0">
+			  	<TextView
+			      	android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:textSize="17sp"
+			        android:textColor="@android:color/black"
+			  		android:text="@string/require_cash"/>
+				 <EditText android:id="@+id/cashTxt"
+				    android:inputType="numberDecimal"
+			      	android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			  		android:layout_marginTop="5dip"
+			  		android:layout_marginBottom="20dip"
+			  		android:singleLine="true"
+			  		android:background="@drawable/text_selector"
+			  		android:textColor="@android:color/black"
+			  		style="@style/customEditText"/>
+			</LinearLayout> 
+			<LinearLayout android:id="@+id/r2"
+				  android:layout_width="fill_parent"
+				  android:layout_height="wrap_content"
+				  android:orientation="vertical"
+				  android:layout_marginTop="10dp"
+				  android:visibility="gone"
+				  android:layout_below="@+id/r1">
+				 <TextView
+			      	android:layout_width="fill_parent"
+			  		android:layout_height="wrap_content"
+			        android:textStyle="bold"
+			        android:textSize="17sp"
+			        android:textColor="@android:color/black"
+			  		android:text="@string/problem"/>
+				 <EditText android:id="@+id/problemTxt"
+				    android:inputType="textMultiLine|textVisiblePassword" 
+			  		android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:gravity="top|left"
+			  		android:layout_marginTop="5dip"
+			  		android:layout_marginBottom="20dip"
+			  		android:singleLine="false"
+			  		android:minLines="3"
+			  		android:scrollbars="vertical"
+			  		android:background="@drawable/text_selector"
+			  		style="@style/customEditText"/> 
+			</LinearLayout>
+		  	<LinearLayout android:id="@+id/r3"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:orientation="vertical"
+			  android:layout_marginTop="15dp"
+			  android:layout_below="@+id/r2">	
+				 <Button android:id="@+id/btnSave"
+				      android:layout_width="150dp"
+				      android:background="@drawable/btn_red_matte"
+				      android:textSize="14sp"
+				      android:layout_gravity="center"
+				      android:gravity="center"
+				      android:text="@string/save"
+				      style="@style/ButtonText1"/>
+				 <!-- 
+				 <Button android:id="@+id/btnClose"
+				     android:layout_width="fill_parent"
+				      android:background="@drawable/btn_pink_glossy"
+				      android:textSize="14sp"
+				      android:layout_gravity="center"
+				      android:gravity="center"
+				      android:text="Close"
+				      style="@style/ButtonText1"/>
+				 -->     
+			</LinearLayout>
+	    </RelativeLayout>
+	</ScrollView>
+</LinearLayout>

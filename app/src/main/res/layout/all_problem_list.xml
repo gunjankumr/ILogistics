@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Included header.xml here -->
+	<ViewStub android:id="@+id/vsHeader"
+	    android:inflatedId="@+id/header"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout="@layout/header"/>
+	
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="0dp">
+			<RelativeLayout
+			    android:id="@+id/invhead"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/btn_green_matte">
+			    <TextView
+				        android:id="@+id/left"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentLeft="true"
+			            android:textSize="16sp"
+						android:textStyle="bold|italic"
+						android:typeface="serif"/>
+		  			<TextView android:id="@+id/center"
+					    android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:gravity="center"
+						android:typeface="serif"/>
+					<TextView
+					    android:id="@+id/right"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_alignParentRight="true"
+			            android:textSize="16sp"
+			            android:textStyle="bold|italic"
+			            android:typeface="serif"/>
+	  		</RelativeLayout>
+		    <ListView
+		        android:id="@+id/list"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0dp"
+			    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+			    android:scrollbarSize="6dip"
+		        android:layout_weight="1"
+		        android:listSelector="@android:color/transparent"
+		        android:descendantFocusability="beforeDescendants"
+		        android:background="@drawable/splash_no"/>
+		    <!-- 
+		    <View android:layout_width="fill_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:layout_gravity="center"
+			    android:paddingTop="4dp"
+			    android:paddingBottom="4dp"
+			    android:gravity="center_horizontal"
+			    android:background="@android:color/white">
+			    <Button android:id="@+id/btnComplete"
+			      android:text="@string/complete"
+			      style="@style/ButtonText1"
+			      android:background="@drawable/button_blue"
+			      android:onClick="onButtonClicker"/>
+			    <Button android:id="@+id/btnProblem"
+			      android:text="@string/problem"
+			      style="@style/ButtonText1"
+			      android:layout_marginLeft="10dp"
+			      android:background="@drawable/button_blue"
+			      android:onClick="onButtonClicker"/>
+			</LinearLayout>
+			-->
+		</LinearLayout>
+		
+</LinearLayout>
+	

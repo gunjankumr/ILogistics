@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.compass.ilogistics"
+        minSdkVersion 9
+        targetSdkVersion 15
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:support-v4:23.2.1'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile group: 'com.google.guava', name: 'guava', version: '15.0'
+    compile files('libs/android-integration.jar')
+    compile files('libs/core.jar')
+    compile files('libs/gcm.jar')
+    compile files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    compile files('libs/commons-net-3.5.jar')
+}

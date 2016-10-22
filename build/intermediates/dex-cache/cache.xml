@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="90be14317e3f26d18438e8dbf8544500d1dfe07f">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-awareness-9.6.1_09f766ad7ef73285898861eeb95259e2086557d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ee61ace5f3e488fc610e1c67693c49186a441f32">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gass-9.6.1_a9ae62a4e0f671ef79b5bb33122375b9ecfd8d8b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.6.1_aff8e17986f8518883762a418fb9a99527086423.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-9.6.1_532e6168da8c355892ceb64efb36d037f91bc891.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0dfc12e4aacf514346ea866560c99807d032bc48">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-9.6.1_e44568fc24c5d8db8db8853c5af9592783c52c99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d45c048bb1c55cf963899190e507065aea8e5be9">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-9.6.1_4f0d1145b92ea1124718c17d6139386266db56aa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/palette-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.android.support-palette-v7-24.0.0_599b5a67780c2ac3a28e5db409781ba07e601375.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_5a96cff84503194931bc997f9e66864be1ca02fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-9.6.1_34f4dfdea86b8e9fcc35d5d1b45612924d5d23a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-9.6.1_14f3c98ea4902eb1083f203dbddf2bc134cc17ee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-9.6.1_efa0bbf575b5490eeea778df659b5bb0ff2386d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.6.1_4087de32164b7a402dbc01345a39c8bf7b9770a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/libs/core.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="69ab751723c7f7c8a01fddb1d169a93160fadca7">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/core_4ac61b9d48b7ed2375d05233baf7e4ca3efed942.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-9.6.1_715f79e98e2daaa53c81116fe8391172aeca1a77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.6.1_955f92cbdc345a6dcfd87143e59b87518fdc70d1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f0e96478ca3147bc588aadb9ae467d85b42473cc">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-api-9.6.1_3a1fe6e64db1de18e28ec0b044731ef310f74be8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-9.6.1_77cace299d5e8ed0db982f64096fb4ba573158fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.6.1_28fef8de7bf853517af17ca120cecb23c4c29284.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.0.0_30cbfd6eaafb4134e7133a854e80408b4f8fc2b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/libs/android-integration.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="02824baabca4e2a00de975c9a95079eb5c67bfa5">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/android-integration_cc94d620ae2436f28a9e0491a0e51c686484da43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="526f4b02f1771fa7607ff1b89fe2e9bd0344fee8">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-9.6.1_38d9839f5aff32b51f779376da2226fbeb33eb6f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/libs/gcm.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a6d7bce795a14c7f86111756c4ceb44b79de14aa">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/gcm_ea64f64abfe7e7a3596609d47608d8285110b447.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-module-9.6.1_f7dfde52ef4190c289e14319db0e1502b8e32a0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a76a6983a23788b3689524d4bed763955afbd306">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-9.6.1_0982af4050b2c48fb464ca40f7454917df7568d5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_a4e6b512bdd28ebfa37a3b18f39c89c90eed2d96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="dfcba20b85ef3669a8ced0a8760a6df281cbd7c7">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-9.6.1_4df3a84634fcdfcc36750a18ff17c69c61fa61eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Volumes/Macintosh_HD_2/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_78930e27265f7945bff4d25d0778f58bbb00a6c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.0.0_746354f70354a7e0f6e476111032b070fc15fb3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-9.6.1_0bc1dd48cf8fcb02681323bd62fb2830cdf7825d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.6.1_8f82131f0ad1ec6c73660b16c7682f3da474ca46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-places-9.6.1_472f7fb6004fb2a794e878619e09c0f7431bde63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_72a351ddf6ac503b4cbabfb7ea8821af7c605f40.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-9.6.1_7acf2fbd237c2e96fb61a5cdf68edeaf89124e47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-9.6.1_7ea735920ad5376de72a03bec9ec4e88bbcd1f05.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ee0ccb43f6ab276191b7f2d77c305fa9beb26db9">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-clearcut-9.6.1_016369e77d9e9e9a030a909dc6bcbc3ca9165507.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0cae6511c5705869cacf199f8abb0ea84cd10157">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-9.6.1_0ad2c31f0eb4631556d3cb4d870fe71a501b7c3f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-common-9.6.1_477ccb7b99bc4e6301d236b7587db925fcaa9505.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.6.1_ea393261f90fecb2afcb01acf7be37a0d120c931.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-24.0.0_2c4d1c436bda9defae19789394cee43497299476.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-9.6.1_4a0397ce7db6debd58bf4ce95da459e43b7be8fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.6.1_5c1ac8c72f92c3d085898fc4acadb850f95fd276.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c4394d46152165cd3256fb711ac94f66a28fbae1">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-9.6.1_33f67e0b7656ed82bda1f88b8f87ea3b7e79f82b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="79f521967ad7f49b34748db89df02852c2b2f87b">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.6.1_8207e3b51d8144525f766c963387c8d80c138dbb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1810ae0df0a1b9b539ce97df54e96f2bf8f5ff94">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-9.6.1_f087172892f1bf30248e72b26995c1e1b1dca21b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-9.6.1_b850e6de5d29d4c27a70a2c16693d661905ab43c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-9.6.1_ed9a2221015a77861ee3863ba8a2f4b39f88b1e3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-9.6.1_bca09302b538c06bea7d5cd7191603ce38f6d608.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e8796346a9191a019e936210a2dc50662c57594b">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/ksoap2-android-assembly-2.4-jar-with-dependencies_6a188300dd6f5840cd9465ab12837bd634258ff8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.0.0_297a14631966818c21f72359a7a29766900105c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.6.1_7b2a70df4123e09526ea99a475bf445f78451c22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a53ac0560ab915a02c50d2e5c7b003381e6fb5e3">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-9.6.1_faa3c8cf36638500103e2747c0a21d6e47db38c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-9.6.1_c86c7ee850d17a535a757afa961466f167d9bbea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.6.1_90e70bbea2ed1f0854a32e4c1a9f6595c692e855.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-9.6.1_6d94ad74c79e0bdeea3a2db042b30358758c4ce0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c0cf3d4f9d7d076f301e110b92e18ae23da12c2">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-framework-9.6.1_2ee768d0aae6dcc899f50d27017b187f04ff9a16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="babb25794a7599069d34705038744c5760a9a88c">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-instantapps-9.6.1_4f5a3927cfcf48f48c2149b3b690e38b4c564465.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.6.1_7ac16b000ba53f5af08554a12bdcaf61611e7695.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ad7706f8bb4a985656a8d2142f74021c8b0e03d8">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-9.6.1_2dbb965c166da1413ce68b10205422cdcfd4a3c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="518adc52081d41724932b41bc132e4d50a352b86">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-9.6.1_e70715fd15fccaa7cd2302593d223dcf4541fcd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a136366045678579300d161de97c2211c4c4f7a0">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-9.6.1_904f6432348442077ca3e77c0de4a0655e29c4c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-9.6.1_e4be835a3a999bef025041ff526587bb72d8f5ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.6.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.2"
+        sha1="ff9be0a1e75a21c372735930d8987a55b5e6065f">
+        <dex dex="/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-9.6.1_db12f6b797633f1ae641b08f7f6fa2c575e265ea.jar" />
+    </item>
+
+</items>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 	<!-- Included header.xml here -->
+ 	
+	<ViewStub android:id="@+id/vsHeader" 
+	    android:inflatedId="@+id/header" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout="@layout/header" />
+	
+ 		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="0dp">
+			<RelativeLayout
+			    android:id="@+id/invhead"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/btn_lightblue_glossy">
+			    <!--android:background="@drawable/btn_white_glossy"-->
+			    <ImageView
+			        android:id="@+id/invleft"
+		            android:contentDescription="@string/contentDescription"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentLeft="true"
+		            android:background="@drawable/arrow_left"/>
+	  			<TextView android:id="@+id/invDoc"
+				    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_centerInParent="true"
+					android:gravity="center"
+					android:textStyle="bold"
+					android:textSize="20sp"
+					android:typeface="serif"/>
+				<ImageView
+				    android:id="@+id/invright"
+		            android:contentDescription="@string/contentDescription"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:background="@drawable/arrow_right"/>
+	  		</RelativeLayout>
+	  		
+			<ListView
+		        android:id="@+id/list"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0dp"
+			    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+			    android:scrollbarSize="6dip"
+		        android:layout_weight="1"
+		        android:descendantFocusability="beforeDescendants"
+		        android:background="@drawable/splash_no"/>
+			<!-- 
+			<ListView android:id="@+id/listView1" 
+		 	    android:layout_width="fill_parent"
+		  		android:layout_height="fill_parent" />
+			-->
+			<View android:layout_width="fill_parent" android:layout_height="1dp" android:background="#F0F0F0"/>
+		    <LinearLayout
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:layout_gravity="center"
+			    android:paddingTop="4dp"
+			    android:paddingBottom="4dp"
+			    android:gravity="center_horizontal"
+			    android:background="@android:color/white">
+			    <Button android:id="@+id/btnComplete"
+			      android:text="@string/complete"
+			      style="@style/ButtonText1"
+			      android:background="@drawable/btn_red_matte"
+			      android:onClick="onButtonClicker"/>
+			</LinearLayout>
+			
+	  	</LinearLayout>	
+ 
+</LinearLayout>

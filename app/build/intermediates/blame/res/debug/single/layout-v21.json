@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/res/layout-v21/place_autocomplete_fragment.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/layout-v21/place_autocomplete_fragment.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/res/layout-v21/place_autocomplete_fragment.xml"
+    }
+]

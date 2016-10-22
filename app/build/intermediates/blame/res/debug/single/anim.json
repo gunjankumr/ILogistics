@@ -1,0 +1,194 @@
+[
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slidein_left.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slidein_left.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slidein_left.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slidein_left.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slidedown.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slidedown.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_out_left.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slidedown.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slidedown.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/mainfadein.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/mainfadein.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_out_right.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/animation2.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/animation2.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/animation2.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/animation2.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/zoom_exit.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/zoom_exit.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slideup.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slideup.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slideout_left.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slideout_left.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/animation1.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/animation1.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/splashfadeout.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/splashfadeout.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/zoom_exit.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/zoom_exit.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/mainfadein.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/mainfadein.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slideout_left.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slideout_left.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slideup.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slideup.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_out_left.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slide_out_left.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/zoom_enter.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/zoom_enter.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_out_right.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slide_out_right.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/animation1.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/animation1.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/zoom_enter.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/zoom_enter.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_in_left.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_in_right.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/splashfadeout.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/splashfadeout.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_in_left.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/anim/slide_in_left.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/slide_in_right.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_popup_enter.xml"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/anim/abc_slide_out_top.xml"
+    }
+]

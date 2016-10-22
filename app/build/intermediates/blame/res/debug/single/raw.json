@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/raw/button.mp3",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/src/main/res/raw/button.mp3"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.1/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/res/merged/debug/raw/gtm_analytics",
+        "source": "/Users/rkumar/Documents/compass/ILogistics/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.6.1/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/Users/ranjandeo/StudioProjects/ILogistics/app/build/intermediates/res/merged/debug/raw/button.mp3",
+        "source": "/Users/ranjandeo/StudioProjects/ILogistics/app/src/main/res/raw/button.mp3"
+    }
+]

@@ -1,0 +1,59 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+     
+    <style name="AppTheme" parent="android:Theme.Light"></style>    
+	
+    <style name="customTextView" parent="@android:style/Widget.TextView">
+ 	    <item name="android:textSize">22sp</item>
+    </style>
+ 	<style name="customEditText" parent="@android:style/Widget.EditText">
+ 	    <item name="android:textSize">22sp</item>
+    </style>
+    
+ 	<style name="HomeButton">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff29549f</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+ 	<style name="PhoneSetting">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff29549f</item>
+        <item name="android:background">@null</item>
+    </style>
+ 	
+    <style name="ButtonText">
+	    <item name="android:shadowColor">#000000</item>
+	    <item name="android:shadowDx">1</item>
+	    <item name="android:shadowDy">-1</item>
+	    <item name="android:shadowRadius">1</item>
+	</style>
+	
+
+	<style name="ButtonText1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:layout_margin">3dp</item>-->
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:typeface">serif</item>
+    </style>
+    
+</resources>
