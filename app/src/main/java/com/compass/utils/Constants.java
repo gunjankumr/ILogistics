@@ -15,20 +15,27 @@ public class Constants {
 	public static final String CONTRACTOR_OTP    = "otp";
 	
 	// web service url
-	public static final String URL = "http://appiphone.jagota.com:94/mLogistics/WebService.asmx";
+	public static final String URL = "https://api.jagota.com/mLogistics/WebService.asmx";
 	
 	// Development Server
-	//public static final String URLJSON = "http://hq.compass-softwares.com:83/iQuotation/iLogistic.asmx";
+	//public static final String URLJSON = "http://api.jagota.compass-softwares.com/mLogistics/WebService.asmx";
 	
 	//Production Server
-	public static final String URLJSON = "http://appiphone.jagota.com:94/iQuotation/iLogistic.asmx";
-	
-   //  public static final String URLJSONVERSION = "http://hq.compass-softwares.com:83/JagotaWebIntegration/WebAdmin/ApplicationUDID.asmx";
-	
+	public static final String URLJSON = "https://api.jagota.compass.com/iQuotation/iLogistic.asmx";
+
+	// Development Server
+
+	//public static final String URLJSON = "http://api.jagota.compass-softwares.com/iQuotation/iLogistic.asmx";
+
 	
 	// Production Server
-		public static final String URLJSONVERSION = "http://appiphone.jagota.com:94/JagotaWebIntegration/WebAdmin/ApplicationUDID.asmx";	
-	
+		public static final String URLJSONVERSION = "https://api.jagota.com/JagotaWebIntegration/WebAdmin/ApplicationUDID.asmx";
+
+
+	// Development Server
+
+	//  public static final String URLJSONVERSION = "http://api.jagota.compass-softwares.com/JagotaWebIntegration/WebAdmin/ApplicationUDID.asmx";
+
 	// web service namespace
 	public static final String NAMESPACE ="http://tempuri.org/";
 	

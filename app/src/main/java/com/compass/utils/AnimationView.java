@@ -31,15 +31,15 @@ public class AnimationView extends View {
     
      public AnimationView(Context context,AttributeSet attrs) {
       super(context,attrs);
-      setFocusable(true);
-      java.io.InputStream is;
-      is = context.getResources().openRawResource(R.drawable.arrow1twisting);
-      if (DECODE_STREAM) {
-        mMovie = Movie.decodeStream(is);
-      } else {
-        byte[] array = streamToBytes(is);
-        mMovie = Movie.decodeByteArray(array, 0, array.length);
-      }
+//      setFocusable(true);
+//      java.io.InputStream is;
+//      is = context.getResources().openRawResource(R.drawable.arrow1twisting);
+//      if (DECODE_STREAM) {
+//        mMovie = Movie.decodeStream(is);
+//      } else {
+//        byte[] array = streamToBytes(is);
+//        mMovie = Movie.decodeByteArray(array, 0, array.length);
+//      }
     }
      
     @Override
