@@ -24,7 +24,6 @@
     <string name="transportName">Transport Name</string>
 
 
-
     <!-- BUTTON -->
     <string name="login">Login</string>
     <string name="checkin">CHECK IN</string>
@@ -36,7 +35,7 @@
     <string name="complete">Complete</string>
     <string name="save">Save</string>
     <string name="remarkJobRoute">remark</string>
-    
+
 
     <!-- TEXTVIEW PROMPT -->
     <string name="date">Date</string>
@@ -56,7 +55,8 @@
     <string name="invoicecomp">Invoice</string>
     <string name="invoiceprob">Invoice</string>
     <string name="invoicenotcom">Invoice</string>
-    
+    <string name="myQRCode">My QR Code Log-in</string>
+
 
     <!-- MESSAGE -->
     <string name="loginfail">username or password not correct</string>
@@ -76,7 +76,7 @@
     <string name="finish_invoice">Please press \'Complete\' before moving to next invoice</string>
     <string name="selectProblem">Please select any problem first</string>
     <string name="otpMismatch">Please enter correct OTP.</string>
-    
+
     <!-- HINT -->
     <string name="search">Search</string>
     <string name="problem_prompt">Choose a problem</string>

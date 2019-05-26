@@ -85,7 +85,7 @@
 					  <EditText android:id="@+id/usernameTxt"
 					    android:inputType="textVisiblePassword"
 				      	android:layout_width="300dp"
-				  		android:layout_height="wrap_content"
+				  		android:layout_height="50dp"
 				  		android:layout_marginTop="5dip"
 				  		android:layout_marginBottom="20dip"
 				  		android:singleLine="true"
@@ -104,7 +104,7 @@
 					  <EditText android:id="@+id/passwordTxt"
 					    android:inputType="textPassword"
 				      	android:layout_width="300dp"
-				  		android:layout_height="wrap_content"
+				  		android:layout_height="50dp"
 				  		android:layout_marginTop="5dip"
 				  		android:layout_marginBottom="20dip"
 				  		android:singleLine="true"
@@ -188,29 +188,48 @@
 
 							<TextView
 									style="@android:style/TextAppearance.DeviceDefault.Large"
-									android:layout_width="300dp"
+									android:layout_width="310dp"
 									android:layout_height="wrap_content"
 									android:text="@string/phoneNumber"
 									android:textColor="#ffffff"
 									android:textStyle="bold"
-									android:typeface="serif" />
+								android:typeface="serif" />
 
-							<EditText
+							<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+								android:layout_height="wrap_content"
+								android:orientation="horizontal"
+								android:layout_width="fill_parent"
+								android:gravity="center">
+								<EditText
 									android:id="@+id/phoneNumberTxt"
 									style="@style/customEditText"
-									android:layout_width="300dp"
-									android:layout_height="wrap_content"
-									android:layout_marginBottom="20dip"
+									android:layout_width="250dp"
+									android:layout_height="50dp"
+									android:layout_marginBottom="20dp"
 									android:layout_marginTop="5dip"
+									android:layout_marginLeft="20dp"
+									android:layout_marginRight="10dip"
 									android:background="@drawable/text_selector"
 									android:enabled="false"
 									android:imeOptions="actionDone"
 									android:inputType="textVisiblePassword"
 									android:singleLine="true" />
 
+								<Button
+									android:id="@+id/btnBarcode"
+									android:layout_width="75dp"
+									android:layout_height="75dp"
+									android:onClick="onButtonClicker"
+									android:background="@drawable/btn_barcode">
+								</Button>
+
+							</LinearLayout>
+
+
+
 							<TextView
 									style="@android:style/TextAppearance.DeviceDefault.Large"
-									android:layout_width="300dp"
+									android:layout_width="310dp"
 									android:layout_height="wrap_content"
 									android:text="@string/otp"
 									android:textColor="#ffffff"
@@ -220,11 +239,14 @@
 							<EditText
 									android:id="@+id/otpTxt"
 									style="@style/customEditText"
-									android:layout_width="300dp"
-									android:layout_height="wrap_content"
+									android:layout_width="250dp"
+									android:layout_height="50dp"
 									android:layout_marginBottom="20dip"
 									android:layout_marginTop="5dip"
-									android:background="@drawable/text_selector"
+									android:layout_marginLeft="0dp"
+									android:layout_marginRight="25dp"
+
+								android:background="@drawable/text_selector"
 									android:enabled="true"
 									android:imeOptions="actionDone"
 									android:inputType="number"
@@ -313,7 +335,7 @@
 					  <EditText android:id="@+id/assignDateTxt"
 					    android:inputType="textVisiblePassword"
 				      	android:layout_width="fill_parent"
-				  		android:layout_height="wrap_content"
+				  		android:layout_height="50dp"
 				  		android:layout_marginTop="5dip"
 				  		android:layout_marginBottom="20dip"
 				  		android:singleLine="true"
@@ -331,7 +353,7 @@
 					  <EditText android:id="@+id/assignRouteTxt"
 					    android:inputType="textVisiblePassword"
 				      	android:layout_width="fill_parent"
-				  		android:layout_height="wrap_content"
+				  		android:layout_height="50dp"
 				  		android:layout_marginTop="5dip"
 				  		android:layout_marginBottom="20dip"
 				  		android:singleLine="true"
@@ -349,7 +371,7 @@
 					  <EditText android:id="@+id/assignRoundTxt"
 					    android:inputType="number"
 				      	android:layout_width="fill_parent"
-				  		android:layout_height="wrap_content"
+				  		android:layout_height="50dp"
 				  		android:layout_marginTop="5dip"
 				  		android:layout_marginBottom="20dip"
 				  		android:singleLine="true"

@@ -377,6 +377,10 @@ public class LoginActivity extends Activity {
 			etUsername = (EditText) findViewById(R.id.usernameTxt);
              etPassword = (EditText) findViewById(R.id.passwordTxt);
 			break;
+			case R.id.btnBarcode:
+				startActivity(new Intent(LoginActivity.this, BarCodeInformationActivity.class));
+				finish();
+				break;
 		default:
 			break;
 		}
