@@ -29,6 +29,19 @@
 			  android:layout_height="fill_parent"
 			  android:layout_gravity="center_vertical"
 			  android:gravity="center">
+
+				<TextView android:id="@+id/login_title"
+					style="@android:style/TextAppearance.DeviceDefault.Large"
+					android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:text="@string/title_activity_main"
+					android:textColor="#ffffff"
+					android:textSize="25sp"
+					android:textStyle="bold"
+					android:typeface="serif"
+					android:gravity="center"
+					android:background="@android:color/holo_blue_light"/>
+
 				<LinearLayout android:id="@+id/login"
 				  android:orientation="vertical"
 				  android:layout_width="fill_parent"
@@ -37,8 +50,32 @@
 				  android:paddingLeft="10dp"
 				  android:paddingRight="10dp"
 				  android:gravity="center">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:gravity="bottom">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:orientation="vertical">
+
+			<TextView
+						android:layout_width="200dp"
+						android:layout_height="wrap_content"
+						android:textStyle="bold"
+						style="@android:style/TextAppearance.DeviceDefault.Large"
+						android:typeface="serif"
+						android:textColor="#ffffff"
+						android:textSize="24sp"
+						android:layout_marginBottom="30dip"
+						android:text="@string/adminLogin"/>
 					  <TextView
-				      	android:layout_width="200dp"
+				      	android:layout_width="300dp"
 				  		android:layout_height="wrap_content"
 				        android:textStyle="bold"
 				        style="@android:style/TextAppearance.DeviceDefault.Large"
@@ -47,7 +84,7 @@
 				  		android:text="@string/username"/>
 					  <EditText android:id="@+id/usernameTxt"
 					    android:inputType="textVisiblePassword"
-				      	android:layout_width="200dp"
+				      	android:layout_width="300dp"
 				  		android:layout_height="wrap_content"
 				  		android:layout_marginTop="5dip"
 				  		android:layout_marginBottom="20dip"
@@ -57,7 +94,7 @@
 				  		android:text=""
 				  		style="@style/customEditText"/>
 					  <TextView
-				      	android:layout_width="200dp"
+				      	android:layout_width="300dp"
 				  		android:layout_height="wrap_content"
 				        android:textStyle="bold"
 				        style="@android:style/TextAppearance.DeviceDefault.Large"
@@ -66,7 +103,7 @@
 				  		android:text="@string/password"/>
 					  <EditText android:id="@+id/passwordTxt"
 					    android:inputType="textPassword"
-				      	android:layout_width="200dp"
+				      	android:layout_width="300dp"
 				  		android:layout_height="wrap_content"
 				  		android:layout_marginTop="5dip"
 				  		android:layout_marginBottom="20dip"
@@ -82,6 +119,28 @@
 					      android:text="@string/login"
 					      style="@style/ButtonText1"
 					      android:onClick="onButtonClicker"/>
+
+			</LinearLayout>
+					<TextView
+						style="@android:style/TextAppearance.DeviceDefault.Large"
+						android:layout_width="match_parent"
+						android:layout_height="45dp"
+						android:text="@string/companyNameLogin"
+						android:textColor="#ffffff"
+						android:textSize="30sp"
+						android:textStyle="bold"
+						android:gravity="center|bottom"/>
+					<TextView
+						android:id="@+id/appVersion1"
+						style="@android:style/TextAppearance.DeviceDefault.Large"
+						android:layout_width="match_parent"
+						android:layout_height="20dp"
+						android:text="@string/appVersiontxt"
+						android:textColor="#ffffff"
+						android:textSize="15sp"
+						android:textStyle="bold"
+						android:gravity="center|bottom"/>
+		</LinearLayout>
 				</LinearLayout>
 
 				<LinearLayout
@@ -91,17 +150,17 @@
 				    android:orientation="vertical"
 					android:visibility="visible">
 
-				    <TextView
-				        style="@android:style/TextAppearance.DeviceDefault.Large"
-				        android:layout_width="match_parent"
-				        android:layout_height="45dp"
-				        android:text="@string/appnameLogin"
-				        android:textColor="#ffffff"
-				        android:textSize="25sp"
-				        android:textStyle="bold"
-				        android:typeface="serif" 
-				        android:gravity="center"
-						android:background="@android:color/holo_blue_light"/>
+				    <!--<TextView-->
+				        <!--style="@android:style/TextAppearance.DeviceDefault.Large"-->
+				        <!--android:layout_width="match_parent"-->
+				        <!--android:layout_height="45dp"-->
+				        <!--android:text="@string/appnameLogin"-->
+				        <!--android:textColor="#ffffff"-->
+				        <!--android:textSize="25sp"-->
+				        <!--android:textStyle="bold"-->
+				        <!--android:typeface="serif" -->
+				        <!--android:gravity="center"-->
+						<!--android:background="@android:color/holo_blue_light"/>-->
 
 					<LinearLayout
 							android:layout_width="match_parent"
@@ -116,10 +175,20 @@
 								android:layout_weight="1"
 								android:gravity="center"
 								android:orientation="vertical">
+							<TextView
+								android:layout_width="200dp"
+								android:layout_height="wrap_content"
+								android:textStyle="bold"
+								style="@android:style/TextAppearance.DeviceDefault.Large"
+								android:typeface="serif"
+								android:textColor="#ffffff"
+								android:textSize="24sp"
+								android:layout_marginBottom="30dip"
+								android:text="@string/driverLogin"/>
 
 							<TextView
 									style="@android:style/TextAppearance.DeviceDefault.Large"
-									android:layout_width="200dp"
+									android:layout_width="300dp"
 									android:layout_height="wrap_content"
 									android:text="@string/phoneNumber"
 									android:textColor="#ffffff"
@@ -129,7 +198,7 @@
 							<EditText
 									android:id="@+id/phoneNumberTxt"
 									style="@style/customEditText"
-									android:layout_width="200dp"
+									android:layout_width="300dp"
 									android:layout_height="wrap_content"
 									android:layout_marginBottom="20dip"
 									android:layout_marginTop="5dip"
@@ -141,7 +210,7 @@
 
 							<TextView
 									style="@android:style/TextAppearance.DeviceDefault.Large"
-									android:layout_width="200dp"
+									android:layout_width="300dp"
 									android:layout_height="wrap_content"
 									android:text="@string/otp"
 									android:textColor="#ffffff"
@@ -151,7 +220,7 @@
 							<EditText
 									android:id="@+id/otpTxt"
 									style="@style/customEditText"
-									android:layout_width="200dp"
+									android:layout_width="300dp"
 									android:layout_height="wrap_content"
 									android:layout_marginBottom="20dip"
 									android:layout_marginTop="5dip"
@@ -295,7 +364,7 @@
 					      style="@style/ButtonText1"
 					      android:onClick="onButtonClicker"/>
 				</LinearLayout>
-				
+
 			</LinearLayout>
 	</ScrollView>
 </LinearLayout>
