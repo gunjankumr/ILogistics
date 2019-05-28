@@ -50,15 +50,18 @@
         android:name="android.support.multidex.MultiDexApplication"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
         <meta-data
-            android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyAaL8EMlub2ZS98LnaowzIRlruH7IhZXNc" />
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
+        <!-- android:name="com.compass.activity.SplashActivity" -->
         <activity
-            android:name="com.compass.activity.SplashActivity"
+            android:name="com.compass.activity.map.MapsActivity"
             android:configChanges="orientation|keyboardHidden"
             android:debuggable="true"
             android:label="@string/title_activity_main"
@@ -210,6 +213,7 @@
             android:name="com.compass.ilogistics.PhoneNumberActivity"
             android:label="@string/title_activity_phone_number" >
         </activity>
+
     </application>
 
 </manifest>

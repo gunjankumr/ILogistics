@@ -1,13 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    signingConfigs {
+        release {
+            storeFile file('/Users/ranjan/Documents/Android/ILogistics/keystore/iLogistics.keystore')
+            storePassword 'iLogistics'
+            keyAlias = 'iLogistics'
+            keyPassword 'iLogistics'
+        }
+    }
+    compileSdkVersion 27
     buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.compass.ilogistics"
         minSdkVersion 16
-        targetSdkVersion 26
+        targetSdkVersion 27
         multiDexEnabled true
     }
 
@@ -15,6 +23,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+
+        debug {
+
         }
     }
 
@@ -31,10 +43,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:23.2.1'
-    implementation 'com.android.support:support-v4:23.2.1'
-    implementation 'com.google.android.gms:play-services:9.6.1'
-    implementation group: 'com.google.guava', name: 'guava', version: '15.0'
+    implementation 'com.google.guava:guava:27.1-android'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    implementation 'com.android.support:support-v4:27.1.1'
+
     implementation files('libs/android-integration.jar')
     implementation files('libs/core.jar')
     implementation files('libs/gcm.jar')
