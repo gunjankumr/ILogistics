@@ -1,13 +1,13 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.2"
+    compileSdkVersion 26
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.compass.ilogistics"
-        minSdkVersion 9
-        targetSdkVersion 15
+        minSdkVersion 16
+        targetSdkVersion 26
         multiDexEnabled true
     }
 
@@ -31,13 +31,13 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.2.1'
-    compile 'com.android.support:support-v4:23.2.1'
-    compile 'com.google.android.gms:play-services:9.6.1'
-    compile group: 'com.google.guava', name: 'guava', version: '15.0'
-    compile files('libs/android-integration.jar')
-    compile files('libs/core.jar')
-    compile files('libs/gcm.jar')
-    compile files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
-    compile files('libs/commons-net-3.5.jar')
+    implementation 'com.android.support:appcompat-v7:23.2.1'
+    implementation 'com.android.support:support-v4:23.2.1'
+    implementation 'com.google.android.gms:play-services:9.6.1'
+    implementation group: 'com.google.guava', name: 'guava', version: '15.0'
+    implementation files('libs/android-integration.jar')
+    implementation files('libs/core.jar')
+    implementation files('libs/gcm.jar')
+    implementation files('libs/ksoap2-android-assembly-2.4-jar-with-dependencies.jar')
+    implementation files('libs/commons-net-3.5.jar')
 }
