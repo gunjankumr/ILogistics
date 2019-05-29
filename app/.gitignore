@@ -26,6 +26,7 @@ out/
 # Gradle files
 .gradle/
 build/
+*/build/*
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -46,6 +47,7 @@ captures/
 # Intellij
 .idea/workspace.xml
 .idea/libraries
+.idea/*.*
 
 #cache
 app/src/main/assets/backbase/static/node_modules/.cache
@@ -58,3 +60,5 @@ local.properties
 
 *.js.map
 */jacoco.exec
+*/*.iml
+app/*.iml
