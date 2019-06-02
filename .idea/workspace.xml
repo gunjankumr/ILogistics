@@ -10,7 +10,11 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61bba0a3-a1eb-4144-8fc1-328322e284ed" name="Default" comment="" />
+    <list default="true" id="61bba0a3-a1eb-4144-8fc1-328322e284ed" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+    </list>
     <ignored path="ILogistics.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -40,7 +44,36 @@
     <favorites_list name="ILogistics" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -77,6 +110,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/AllProblemListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/LoginActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/compass/activity/MenuListActivity.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/.gitignore" />
       </list>
     </option>
   </component>
@@ -90,10 +125,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ILogistics" type="58d84e3e:PackageViewProjectNode" />
+              <item name="app" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ILogistics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ILogistics" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ILogistics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ILogistics" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,6 +361,7 @@
       </method>
     </configuration>
     <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
       <listeners />
@@ -333,9 +394,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Resources Explorer" />
-      <window_info id="Project" order="0" visible="true" weight="0.2167382" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.17668097" />
       <window_info id="Structure" order="1" weight="0.24964234" />
       <window_info id="Captures" order="2" side_tool="true" weight="0.24964234" />
       <window_info id="Designer" order="3" />
@@ -344,8 +405,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info id="Nl-Palette" order="8" />
-      <window_info anchor="bottom" id="Build" sideWeight="0.49928468" weight="0.2847769" />
-      <window_info anchor="bottom" id="Statistic" />
+      <window_info id="Resources Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32893" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49713877" weight="0.5627477" />
@@ -354,13 +414,15 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Gradle Console" order="7" sideWeight="0.5028612" side_tool="true" weight="0.32876712" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" visible="true" weight="0.19291338" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50143063" side_tool="true" visible="true" weight="0.19291338" />
       <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Android Monitor" order="10" sideWeight="0.49713877" weight="0.43064728" />
       <window_info anchor="bottom" id="Logcat" order="11" />
       <window_info anchor="bottom" id="Version Control" order="12" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.49928468" visible="true" weight="0.19291338" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.4985694" visible="true" weight="0.19291338" />
       <window_info anchor="bottom" id="Messages" order="14" sideWeight="0.49353796" weight="0.32876712" />
+      <window_info anchor="bottom" id="Build" order="15" sideWeight="0.49928468" weight="0.2847769" />
+      <window_info anchor="bottom" id="Statistic" order="16" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -574,12 +636,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+        <state relative-caret-position="198">
+          <caret line="169" column="17" selection-start-line="169" selection-start-column="17" selection-end-line="169" selection-end-column="17" />
         </state>
       </provider>
-      <provider editor-type-id="android-manifest" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/compass/activity/RoutingDetailListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -734,6 +796,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="46" column="9" lean-forward="true" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
         </state>
       </provider>
     </entry>
