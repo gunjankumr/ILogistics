@@ -1,7 +1,9 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-     
-    <style name="AppTheme" parent="android:Theme.Light"></style>    
-	
+
+    <style name="iLogisticAppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/light_grey</item>
+    </style>
+
     <style name="customTextView" parent="@android:style/Widget.TextView">
  	    <item name="android:textSize">22sp</item>
     </style>
@@ -55,5 +57,9 @@
         <item name="android:paddingRight">12dp</item>
         <item name="android:typeface">serif</item>
     </style>
-    
+
+    <style name="HeaderBar">
+        <item name="android:background">@color/title_bar_color</item>
+    </style>
+
 </resources>
