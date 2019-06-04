@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="title_height">45dip</dimen>
+    <dimen name="title_height">45dp</dimen>
+    <dimen name="screen_margin">16dp</dimen>
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="component_margin_4dp">4dp</dimen>
+    <dimen name="component_margin_8dp">8dp</dimen>
+    <dimen name="component_margin_5dp">5dp</dimen>
+    <dimen name="screen_margin_12">12dp</dimen>
+
+    <!-- Text Size -->
     <dimen name="text_size_small">14sp</dimen>
     <dimen name="text_size_medium">18sp</dimen>
     <dimen name="text_size_large">22sp</dimen>
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
-
 </resources>
