@@ -5,6 +5,7 @@ package com.compass.activity;
  * http://www.technotalkative.com
  */
 
+import com.compass.activity.map.MapsActivity;
 import com.compass.ilogistics.R;
 import com.compass.utils.ConnectionDetector;
 import com.compass.utils.WebService;
@@ -127,6 +128,7 @@ public class SplashActivity extends Activity {
 					if (running) {
 					//	startActivity(new Intent(getApplicationContext(), HomeActivity.class));
 						startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+//						startActivity(new Intent(getApplicationContext(), MapsActivity.class));
 						
 						finish();
 					}
