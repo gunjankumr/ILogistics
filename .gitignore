@@ -41,7 +41,7 @@ captures/
 # IntelliJ files
 .idea
 *.iml
-/.idea/*
+.idea/*
 
 # OSX files
 .DS_Store
@@ -65,9 +65,9 @@ translation_output.txt
 **/jacoco.exec
 *.iml
 .gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+local.properties
+.idea/workspace.xml
+.idea/libraries
 .DS_Store
 /build
 /captures
