@@ -127,8 +127,8 @@ public class SplashActivity extends Activity {
 				if(serviceResponse.equalsIgnoreCase("true")) {
 					if (running) {
 					//	startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-//						startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-						startActivity(new Intent(getApplicationContext(), MapsActivity.class));
+						startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+//						startActivity(new Intent(getApplicationContext(), MapsActivity.class));
 						
 						finish();
 					}
