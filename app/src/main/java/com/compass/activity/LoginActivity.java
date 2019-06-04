@@ -379,13 +379,11 @@ public class LoginActivity extends Activity {
 			break;
 			case R.id.btnBarcode:
 				startActivity(new Intent(LoginActivity.this, BarCodeInformationActivity.class));
-				finish();
 				break;
 		default:
 			break;
 		}
     }
-    
     
     private class LoginTask extends AsyncTask<String, String, String> {
 		protected void onPreExecute() {
