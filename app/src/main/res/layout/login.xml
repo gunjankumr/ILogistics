@@ -1,392 +1,435 @@
-<?xml version="1.0" encoding="utf-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical"
-    android:background="@drawable/radialback">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radialback"
+    android:orientation="vertical">
     <!-- android:background="@drawable/radialback"> bkgrd-->
-	<!-- 
-	<ViewStub android:id="@+id/vsHeader" 
-	    android:inflatedId="@+id/header"
-		android:layout_width="fill_parent" 
-		android:layout_height="wrap_content"
-		android:layout="@layout/header" />
-	-->
-	<!-- 
+    <!--
+    <ViewStub android:id="@+id/vsHeader"
+        android:inflatedId="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/header" />
+    -->
+    <!--
     <com.compass.utils.AnimationView
-		android:layout_width="fill_parent"
-		android:layout_height="20dp"
-		android:layout_gravity="center"/>
-	--> 					
-	<ScrollView android:id="@+id/scrollView"
-		  android:layout_width="fill_parent"
-		  android:layout_height="fill_parent"
-		  android:scrollbars="vertical"
-		  android:fillViewport="true">
-	        <LinearLayout
-			  android:orientation="vertical"
-			  android:layout_width="fill_parent"
-			  android:layout_height="fill_parent"
-			  android:layout_gravity="center_vertical"
-			  android:gravity="center">
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"/>
+    -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
 
-				<TextView android:id="@+id/login_title"
-					style="@android:style/TextAppearance.DeviceDefault.Large"
-					android:layout_width="match_parent"
-					android:layout_height="45dp"
-					android:text="@string/title_activity_main"
-					android:textColor="#ffffff"
-					android:textSize="25sp"
-					android:textStyle="bold"
-					android:typeface="serif"
-					android:gravity="center"
-					android:background="@android:color/holo_blue_light"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical">
 
-				<LinearLayout android:id="@+id/login"
-				  android:orientation="vertical"
-				  android:layout_width="fill_parent"
-				  android:layout_height="fill_parent"
-				  android:layout_gravity="center_vertical"
-				  android:paddingLeft="10dp"
-				  android:paddingRight="10dp"
-				  android:gravity="center">
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="0dp"
-			android:layout_weight="1"
-			android:orientation="vertical"
-			android:gravity="bottom">
+            <TextView
+                android:id="@+id/login_title"
+                style="@android:style/TextAppearance.DeviceDefault.Large"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:text="@string/title_activity_main"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
 
-			<LinearLayout
-				android:layout_width="match_parent"
-				android:layout_height="0dp"
-				android:layout_weight="1"
-				android:gravity="center"
-				android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/login"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
 
-			<TextView
-						android:layout_width="200dp"
-						android:layout_height="wrap_content"
-						android:textStyle="bold"
-						style="@android:style/TextAppearance.DeviceDefault.Large"
-						android:typeface="serif"
-						android:textColor="#ffffff"
-						android:textSize="24sp"
-						android:layout_marginBottom="30dip"
-						android:text="@string/adminLogin"/>
-					  <TextView
-				      	android:layout_width="300dp"
-				  		android:layout_height="wrap_content"
-				        android:textStyle="bold"
-				        style="@android:style/TextAppearance.DeviceDefault.Large"
-				        android:typeface="serif"
-				        android:textColor="#ffffff"
-				  		android:text="@string/username"/>
-					  <EditText android:id="@+id/usernameTxt"
-					    android:inputType="textVisiblePassword"
-				      	android:layout_width="300dp"
-				  		android:layout_height="50dp"
-				  		android:layout_marginTop="5dip"
-				  		android:layout_marginBottom="20dip"
-				  		android:singleLine="true"
-				  		android:background="@drawable/text_selector"
-				  		android:imeOptions="actionDone"
-				  		android:text=""
-				  		style="@style/customEditText"/>
-					  <TextView
-				      	android:layout_width="300dp"
-				  		android:layout_height="wrap_content"
-				        android:textStyle="bold"
-				        style="@android:style/TextAppearance.DeviceDefault.Large"
-				        android:typeface="serif"
-				        android:textColor="#ffffff"
-				  		android:text="@string/password"/>
-					  <EditText android:id="@+id/passwordTxt"
-					    android:inputType="textPassword"
-				      	android:layout_width="300dp"
-				  		android:layout_height="50dp"
-				  		android:layout_marginTop="5dip"
-				  		android:layout_marginBottom="20dip"
-				  		android:singleLine="true"
-				  		android:background="@drawable/text_selector"
-				  		android:imeOptions="actionDone"
-				  		style="@style/customEditText"/>
-					  <!-- ROYGBIV4240 -->
-					  <Button android:id="@+id/btnLogin"
-					      android:drawableLeft="@android:drawable/ic_lock_idle_lock"
-					      android:background="@drawable/button_blue"
-					      android:textSize="18sp"
-					      android:text="@string/login"
-					      style="@style/ButtonText1"
-					      android:onClick="onButtonClicker"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
 
-			</LinearLayout>
-					<TextView
-						style="@android:style/TextAppearance.DeviceDefault.Large"
-						android:layout_width="match_parent"
-						android:layout_height="45dp"
-						android:text="@string/companyNameLogin"
-						android:textColor="#ffffff"
-						android:textSize="30sp"
-						android:textStyle="bold"
-						android:gravity="center|bottom"/>
-					<TextView
-						android:id="@+id/appVersion1"
-						style="@android:style/TextAppearance.DeviceDefault.Large"
-						android:layout_width="match_parent"
-						android:layout_height="20dp"
-						android:text="@string/appVersiontxt"
-						android:textColor="#ffffff"
-						android:textSize="15sp"
-						android:textStyle="bold"
-						android:gravity="center|bottom"/>
-		</LinearLayout>
-				</LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-				<LinearLayout
-				    android:id="@+id/login1"
-				    android:layout_width="fill_parent"
-				    android:layout_height="match_parent"
-				    android:orientation="vertical"
-					android:visibility="visible">
+                        <TextView
+                            style="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dip"
+                            android:text="@string/adminLogin"
+                            android:textColor="#ffffff"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
 
-				    <!--<TextView-->
-				        <!--style="@android:style/TextAppearance.DeviceDefault.Large"-->
-				        <!--android:layout_width="match_parent"-->
-				        <!--android:layout_height="45dp"-->
-				        <!--android:text="@string/appnameLogin"-->
-				        <!--android:textColor="#ffffff"-->
-				        <!--android:textSize="25sp"-->
-				        <!--android:textStyle="bold"-->
-				        <!--android:typeface="serif" -->
-				        <!--android:gravity="center"-->
-						<!--android:background="@android:color/holo_blue_light"/>-->
+                        <TextView
+                            style="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
 
-					<LinearLayout
-							android:layout_width="match_parent"
-							android:layout_height="0dp"
-							android:layout_weight="1"
-							android:orientation="vertical"
-							android:gravity="bottom">
+                        <EditText
+                            android:id="@+id/usernameTxt"
+                            style="@style/customEditText"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginBottom="20dip"
+                            android:background="@drawable/text_selector"
+                            android:imeOptions="actionDone"
+                            android:inputType="textVisiblePassword"
+                            android:singleLine="true"
+                            android:text="" />
 
-						<LinearLayout
-								android:layout_width="match_parent"
-								android:layout_height="0dp"
-								android:layout_weight="1"
-								android:gravity="center"
-								android:orientation="vertical">
-							<TextView
-								android:layout_width="200dp"
-								android:layout_height="wrap_content"
-								android:textStyle="bold"
-								style="@android:style/TextAppearance.DeviceDefault.Large"
-								android:typeface="serif"
-								android:textColor="#ffffff"
-								android:textSize="24sp"
-								android:layout_marginBottom="30dip"
-								android:text="@string/driverLogin"/>
+                        <TextView
+                            style="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/password"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
 
-							<TextView
-									style="@android:style/TextAppearance.DeviceDefault.Large"
-									android:layout_width="310dp"
-									android:layout_height="wrap_content"
-									android:text="@string/phoneNumber"
-									android:textColor="#ffffff"
-									android:textStyle="bold"
-								android:typeface="serif" />
+                        <EditText
+                            android:id="@+id/passwordTxt"
+                            style="@style/customEditText"
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginBottom="20dip"
+                            android:background="@drawable/text_selector"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:singleLine="true" />
+                        <!-- ROYGBIV4240 -->
+                        <Button
+                            android:id="@+id/btnLogin"
+                            style="@style/ButtonText1"
+                            android:background="@drawable/button_blue"
+                            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                            android:onClick="onButtonClicker"
+                            android:text="@string/login"
+                            android:textSize="18sp" />
 
-							<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-								android:layout_height="wrap_content"
-								android:orientation="horizontal"
-								android:layout_width="fill_parent"
-								android:gravity="center">
-								<EditText
-									android:id="@+id/phoneNumberTxt"
-									style="@style/customEditText"
-									android:layout_width="250dp"
-									android:layout_height="50dp"
-									android:layout_marginBottom="20dp"
-									android:layout_marginTop="5dip"
-									android:layout_marginLeft="20dp"
-									android:layout_marginRight="10dip"
-									android:background="@drawable/text_selector"
-									android:enabled="false"
-									android:imeOptions="actionDone"
-									android:inputType="textVisiblePassword"
-									android:singleLine="true" />
+                    </LinearLayout>
 
-								<Button
-									android:id="@+id/btnBarcode"
-									android:layout_width="75dp"
-									android:layout_height="75dp"
-									android:onClick="onButtonClicker"
-									android:background="@drawable/btn_barcode">
-								</Button>
+                    <TextView
+                        style="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center|bottom"
+                        android:text="@string/companyNameLogin"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
 
-							</LinearLayout>
+                    <TextView
+                        android:id="@+id/appVersion1"
+                        style="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center|bottom"
+                        android:text="@string/appVersiontxt"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!--<TextView-->
+                <!--style="@android:style/TextAppearance.DeviceDefault.Large"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:text="@string/appnameLogin"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:textSize="25sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:typeface="serif" -->
+                <!--android:gravity="center"-->
+                <!--android:background="@android:color/holo_blue_light"/>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom|center_horizontal"
+                    android:layout_margin="@dimen/screen_margin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:layout_margin="@dimen/screen_margin"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dip"
+                            android:gravity="center"
+                            android:text="@string/driverLogin"
+                            android:textColor="#ffffff"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <TextView
+                            style="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/phoneNumber"
+                            android:layout_marginBottom="@dimen/component_margin_8dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+
+                            <EditText
+                                android:id="@+id/phoneNumberTxt"
+                                style="@style/customEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/text_selector"
+                                android:enabled="false"
+                                android:imeOptions="actionDone"
+                                android:inputType="textVisiblePassword"
+                                android:singleLine="true" />
+
+                            <ImageView
+                                android:id="@+id/btnBarcode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/screen_margin"
+                                android:layout_marginLeft="@dimen/screen_margin"
+                                android:background="@drawable/ic_qr_code"
+                                android:onClick="onButtonClicker"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            style="@android:style/TextAppearance.DeviceDefault.Large"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/otp"
+                            android:layout_marginTop="@dimen/screen_margin"
+                            android:layout_marginBottom="@dimen/component_margin_8dp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <EditText
+                                android:id="@+id/otpTxt"
+                                style="@style/customEditText"
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/text_selector"
+                                android:enabled="true"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:singleLine="true" />
+
+                            <!-- It works as a dummy view to make the edit fields align -->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/screen_margin"
+                                android:layout_marginLeft="@dimen/screen_margin"
+                                android:background="@drawable/ic_qr_code"
+                                android:visibility="invisible"/>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnLogin1"
+                            style="@style/ButtonText1"
+                            android:background="@drawable/btn_bluetask"
+                            android:onClick="onButtonClicker"
+                            android:layout_marginTop="@dimen/screen_margin"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/task"
+                            android:textSize="18sp" />
 
 
+                    </LinearLayout>
 
-							<TextView
-									style="@android:style/TextAppearance.DeviceDefault.Large"
-									android:layout_width="310dp"
-									android:layout_height="wrap_content"
-									android:text="@string/otp"
-									android:textColor="#ffffff"
-									android:textStyle="bold"
-									android:typeface="serif" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal">
 
-							<EditText
-									android:id="@+id/otpTxt"
-									style="@style/customEditText"
-									android:layout_width="250dp"
-									android:layout_height="50dp"
-									android:layout_marginBottom="20dip"
-									android:layout_marginTop="5dip"
-									android:layout_marginLeft="0dp"
-									android:layout_marginRight="25dp"
+                        <Button
+                            android:id="@+id/menu_admin"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="bottom|right"
+                            android:background="#00ffffff"
+                            android:drawableTop="@drawable/admin"
+                            android:onClick="onButtonClicker"
+                            android:shadowColor="#000000"
+                            android:shadowDx="1"
+                            android:shadowDy="-1"
+                            android:shadowRadius="1"
+                            android:text="@string/menu_admin"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
 
-								android:background="@drawable/text_selector"
-									android:enabled="true"
-									android:imeOptions="actionDone"
-									android:inputType="number"
-									android:singleLine="true" />
-
-							<Button
-									android:id="@+id/btnLogin1"
-									style="@style/ButtonText1"
-									android:background="@drawable/btn_bluetask"
-									android:onClick="onButtonClicker"
-									android:text="@string/task"
-									android:textSize="18sp" />
+                    </LinearLayout>
 
 
-						</LinearLayout>
+                    <TextView
+                        style="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:gravity="center|bottom"
+                        android:text="@string/companyNameLogin"
+                        android:textColor="#ffffff"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
 
-						<LinearLayout
-								android:layout_width="match_parent"
-								android:layout_height="wrap_content"
-								android:orientation="horizontal"
-								android:gravity="right">
+                    <TextView
+                        android:id="@+id/appVersion"
+                        style="@android:style/TextAppearance.DeviceDefault.Large"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center|bottom"
+                        android:text="@string/appVersiontxt"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
-							<Button
-									android:id="@+id/menu_admin"
-									android:layout_width="110dp"
-									android:layout_height="110dp"
-									android:layout_gravity="bottom|right"
-									android:drawableTop="@drawable/admin"
-									android:onClick="onButtonClicker"
-									android:shadowColor="#000000"
-									android:shadowDx="1"
-									android:shadowDy="-1"
-									android:shadowRadius="1"
-									android:text="@string/menu_admin"
-									android:textColor="#ffffff"
-									android:textSize="18sp"
-									android:textStyle="bold"
-									android:typeface="serif"
-									android:background="#00ffffff" />
 
-						</LinearLayout>
+                </LinearLayout>
 
-						
-						<TextView
-								style="@android:style/TextAppearance.DeviceDefault.Large"
-								android:layout_width="match_parent"
-								android:layout_height="45dp"
-								android:text="@string/companyNameLogin"
-								android:textColor="#ffffff"
-								android:textSize="30sp"
-								android:textStyle="bold"
-								android:gravity="center|bottom"/>
-						<TextView
-						        android:id="@+id/appVersion"
-								style="@android:style/TextAppearance.DeviceDefault.Large"
-								android:layout_width="match_parent"
-								android:layout_height="20dp"
-								android:text="@string/appVersiontxt"
-								android:textColor="#ffffff"
-								android:textSize="15sp"
-								android:textStyle="bold"
-								android:gravity="center|bottom"/>
-						
+            </LinearLayout>
 
-					</LinearLayout>
+            <LinearLayout
+                android:id="@+id/login2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-				</LinearLayout>
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
 
-				<LinearLayout
-				    android:id="@+id/login2"
-				    android:layout_width="fill_parent"
-				    android:layout_height="wrap_content"
-				    android:layout_gravity="center_vertical"
-				    android:gravity="center"
-				    android:orientation="vertical"
-				    android:padding="10dp">
+                <EditText
+                    android:id="@+id/assignDateTxt"
+                    style="@style/customEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@drawable/text_selector"
+                    android:imeOptions="actionDone"
+                    android:inputType="textVisiblePassword"
+                    android:singleLine="true" />
 
-					  <TextView
-				      	android:layout_width="fill_parent"
-				  		android:layout_height="wrap_content"
-				        android:textStyle="bold"
-				        style="@android:style/TextAppearance.DeviceDefault.Large"
-				        android:typeface="serif"
-				        android:textColor="#ffffff"
-				  		android:text="@string/date"/>
-					  <EditText android:id="@+id/assignDateTxt"
-					    android:inputType="textVisiblePassword"
-				      	android:layout_width="fill_parent"
-				  		android:layout_height="50dp"
-				  		android:layout_marginTop="5dip"
-				  		android:layout_marginBottom="20dip"
-				  		android:singleLine="true"
-				  		android:background="@drawable/text_selector"
-				  		android:imeOptions="actionDone"
-				  		style="@style/customEditText"/>
-					  <TextView
-				      	android:layout_width="fill_parent"
-				  		android:layout_height="wrap_content"
-				        android:textStyle="bold"
-				        style="@android:style/TextAppearance.DeviceDefault.Large"
-				        android:typeface="serif"
-				        android:textColor="#ffffff"
-				  		android:text="@string/route"/>
-					  <EditText android:id="@+id/assignRouteTxt"
-					    android:inputType="textVisiblePassword"
-				      	android:layout_width="fill_parent"
-				  		android:layout_height="50dp"
-				  		android:layout_marginTop="5dip"
-				  		android:layout_marginBottom="20dip"
-				  		android:singleLine="true"
-				  		android:background="@drawable/text_selector"
-				  		android:imeOptions="actionDone"
-				  		style="@style/customEditText"/>
-					  <TextView
-				      	android:layout_width="fill_parent"
-				  		android:layout_height="wrap_content"
-				        android:textStyle="bold"
-				        style="@android:style/TextAppearance.DeviceDefault.Large"
-				        android:typeface="serif"
-				        android:textColor="#ffffff"
-				  		android:text="@string/round"/>
-					  <EditText android:id="@+id/assignRoundTxt"
-					    android:inputType="number"
-				      	android:layout_width="fill_parent"
-				  		android:layout_height="50dp"
-				  		android:layout_marginTop="5dip"
-				  		android:layout_marginBottom="20dip"
-				  		android:singleLine="true"
-				  		android:background="@drawable/text_selector"
-				  		android:imeOptions="actionDone"
-				  		style="@style/customEditText"/>
-					    <Button android:id="@+id/btnLogin2"
-					      android:drawableLeft="@android:drawable/ic_lock_idle_lock" 
-					      android:background="@drawable/button_blue"
-					      android:textSize="18sp"
-					      android:text="@string/menu_assign"
-					      style="@style/ButtonText1"
-					      android:onClick="onButtonClicker"/>
-				</LinearLayout>
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/route"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
 
-			</LinearLayout>
-	</ScrollView>
+                <EditText
+                    android:id="@+id/assignRouteTxt"
+                    style="@style/customEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@drawable/text_selector"
+                    android:imeOptions="actionDone"
+                    android:inputType="textVisiblePassword"
+                    android:singleLine="true" />
+
+                <TextView
+                    style="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/round"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/assignRoundTxt"
+                    style="@style/customEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="20dip"
+                    android:background="@drawable/text_selector"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/btnLogin2"
+                    style="@style/ButtonText1"
+                    android:background="@drawable/button_blue"
+                    android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+                    android:onClick="onButtonClicker"
+                    android:text="@string/menu_assign"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
