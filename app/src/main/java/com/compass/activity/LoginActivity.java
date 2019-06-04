@@ -56,6 +56,7 @@ import com.compass.model.CustomerModel;
 import com.compass.model.Invoice;
 import com.compass.model.InvoiceModel;
 import com.compass.model.ProblemSet;
+import com.compass.utils.ConnectionDetector;
 import com.compass.utils.Constants;
 import com.compass.utils.SessionManager;
 import com.compass.utils.ValueHolder;
@@ -89,9 +90,11 @@ public class LoginActivity extends Activity {
 	private AsyncTask<Void, Void, Void> mRegisterTask;
 	private String regIdData = "No Data";
 	boolean registered;
-	
-	
-    @Override
+	private ConnectionDetector cd;
+	private Boolean isInternetPresent = false;
+
+
+	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -99,7 +102,7 @@ public class LoginActivity extends Activity {
         //setHeader(getString(R.string.app_name), false, false);
         session = new SessionManager(getApplicationContext());
         valueHolder = ValueHolder.getSingletonObject();
-        
+
         //doGcmRegistration();
         
         /*
@@ -257,9 +260,9 @@ public class LoginActivity extends Activity {
 		getAppVersion.execute();
 
     }
-    
-    
-    
+
+
+
     public void showAlertDialog(Context context, String title, String message, Boolean status) {
         AlertDialog alertDialog = new AlertDialog.Builder(context).create(); 
         // Setting Dialog Title
@@ -331,9 +334,20 @@ public class LoginActivity extends Activity {
 			    }
 			    
 			valueHolder.setMenuID("menu_contractor");
-			    
-			GetDailyRouteInfoByOTP getDailyRouteInfoByOTP = new GetDailyRouteInfoByOTP();
-			getDailyRouteInfoByOTP.execute();
+			cd = new ConnectionDetector(getApplicationContext());
+			isInternetPresent = cd.isConnectingToInternet();
+			// check for Internet status
+			if (!isInternetPresent) {
+				if (otp.matches(Constants.CONTRACTOR_OTP)) {
+
+				} else {
+					showAlertDialog(this, "Error", "Please enter correct OTP.", true);
+					break;
+				}
+			} else {
+				GetDailyRouteInfoByOTP getDailyRouteInfoByOTP = new GetDailyRouteInfoByOTP();
+				getDailyRouteInfoByOTP.execute();
+			}
 	        
 	        
 			break;
@@ -349,16 +363,24 @@ public class LoginActivity extends Activity {
 		case R.id.menu_admin:
 			valueHolder.setMenuID("menu_admin");
 			setContentView(R.layout.login);
+			TextView appVersion1 = (TextView)findViewById(R.id.appVersion1);
+			appVersion1.setText(getString(R.string.appVersiontxt) +" " + APPVERSION);
 		//	intent = new Intent(LoginActivity.this, HomeAdminActivity.class);
 		//	startActivity(intent);
 			//intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
 			//overridePendingTransition(R.anim.zoom_enter, R.anim.zoom_exit);
 			//overridePendingTransition(R.anim.mainfadein, R.anim.splashfadeout);
-			((LinearLayout) findViewById(R.id.login1)).setVisibility(View.GONE);
+            ((LinearLayout) findViewById(R.id.login1)).setVisibility(View.GONE);
         	((LinearLayout) findViewById(R.id.login2)).setVisibility(View.GONE);
-        	 etUsername = (EditText) findViewById(R.id.usernameTxt);
+			((TextView) findViewById(R.id.login_title)).setText("Login");
+
+			etUsername = (EditText) findViewById(R.id.usernameTxt);
              etPassword = (EditText) findViewById(R.id.passwordTxt);
 			break;
+			case R.id.btnBarcode:
+				startActivity(new Intent(LoginActivity.this, BarCodeInformationActivity.class));
+				finish();
+				break;
 		default:
 			break;
 		}

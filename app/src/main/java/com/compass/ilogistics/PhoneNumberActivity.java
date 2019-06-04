@@ -29,6 +29,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.Window;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PhoneNumberActivity extends Activity {
@@ -41,6 +42,7 @@ public class PhoneNumberActivity extends Activity {
 	private static final String CANCELLED = "CANCELLED";
 	private static final String TIMEOUT = "TIMEOUT";
 	private static final String SUCCESS = "SUCCESS";
+	private static final String APPVERSION = "2.0"; // Modify every time to change version of application
 	private ProgressDialog dialog;
 	private SessionManager session;
 	private String serviceResponse = null;
@@ -53,6 +55,8 @@ public class PhoneNumberActivity extends Activity {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_phone_number);
         session = new SessionManager(getApplicationContext());
+		TextView appVersion = (TextView)findViewById(R.id.appVersion2);
+		appVersion.setText(getString(R.string.appVersiontxt) +" " + APPVERSION);
 
 	}
 

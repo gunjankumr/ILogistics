@@ -3,8 +3,10 @@
 
     <string name="app_name">ILogistics</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">ILogistics</string>
+    <string name="title_activity_main">iLogistics</string>
     <string name="contentDescription"></string>
+    <string name="login_title">Login</string>
+    <string name="device_registration">Device Registration</string>
 
     <!-- MENU -->
     <string name="menu">Menu</string>
@@ -19,6 +21,7 @@
     <string name="view_problem">View Problem</string>
     <string name="scan_product">Scan Product</string>
     <string name="phoneNumber">Phone Number</string>
+    <string name="transportName">Transport Name</string>
 
     <!-- BUTTON -->
     <string name="login">Login</string>
@@ -31,10 +34,13 @@
     <string name="complete">Complete</string>
     <string name="save">Save</string>
     <string name="remarkJobRoute">remark</string>
-    
+
 
     <!-- TEXTVIEW PROMPT -->
     <string name="date">Date</string>
+    <string name="adminLogin">Admin Login</string>
+    <string name="driverLogin">Driver Log-in</string>
+    <string name="selectTransport">Select Transport &amp; Phone Number</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="route">Route Code</string>
@@ -48,7 +54,8 @@
     <string name="invoicecomp">Invoice</string>
     <string name="invoiceprob">Invoice</string>
     <string name="invoicenotcom">Invoice</string>
-    
+    <string name="myQRCode">My QR Code Log-in</string>
+
 
     <!-- MESSAGE -->
     <string name="loginfail">username or password not correct</string>
@@ -67,8 +74,8 @@
     <string name="appVersiontxt">Version</string>
     <string name="finish_invoice">Please press \'Complete\' before moving to next invoice</string>
     <string name="selectProblem">Please select any problem first</string>
-    
-    
+    <string name="otpMismatch">Please enter correct OTP.</string>
+
     <!-- HINT -->
     <string name="search">Search</string>
     <string name="problem_prompt">Choose a problem</string>

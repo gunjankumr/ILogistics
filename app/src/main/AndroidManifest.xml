@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.compass.ilogistics"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="com.compass.ilogistics.permission.MAPS_RECEIVE" />
- 	<uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <permission
         android:name="com.compass.ilogistics.permission.MAPS_RECEIVE"
@@ -19,21 +19,15 @@
 
     <uses-feature
         android:glEsVersion="0x00020000"
-        android:required="true" />
-
-    <!-- Network State Permissions -->
+        android:required="true" /> <!-- Network State Permissions -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
-    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
     <uses-permission android:name="android.permission.CAMERA" />
 
     <permission
         android:name="android.permission.FLASHLIGHT"
         android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
-        android:protectionLevel="normal" />
-
-    <!-- Push notificate -->
+        android:protectionLevel="normal" /> <!-- Push notificate -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
@@ -45,9 +39,9 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:icon="@drawable/ic_application"
         android:label="@string/app_name"
-        android:name="android.support.multidex.MultiDexApplication"
         android:theme="@style/iLogisticAppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
@@ -65,7 +59,7 @@
             android:configChanges="orientation|keyboardHidden"
             android:debuggable="true"
             android:label="@string/title_activity_main"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -75,7 +69,7 @@
 
         <receiver
             android:name="com.google.android.gcm.GCMBroadcastReceiver"
-            android:permission="com.google.android.c2dm.permission.SEND" >
+            android:permission="com.google.android.c2dm.permission.SEND">
             <intent-filter>
 
                 <!-- Receives the actual messages. -->
@@ -89,112 +83,92 @@
 
         <activity
             android:name="com.compass.activity.MainActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.HomeActivity"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.LoginActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.SelectParamActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.HomeAdminActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.MenuListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.RoutingListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.CustomerListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.InvoiceListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.AllInvoiceListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.RoutingDetailListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.ProductListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.RouteJobListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.RouteMapActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.DirectionMapActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.ScanActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.ProductProblemActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.ProductProblemTableActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.AllProblemListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.CheckListActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.compass.activity.CheckListTestActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" >
-        </activity>
+            android:windowSoftInputMode="adjustPan"></activity>
         <activity
             android:name="com.compass.activity.CurrentMapActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
+
         </activity>
 
         <activity
@@ -211,13 +185,14 @@
 	        </intent-filter>
 		</receiver>
         -->
-
-        <service android:name="com.compass.ilogistics.GCMIntentService" />
+        <service android:name=".GCMIntentService" />
 
         <activity
             android:name="com.compass.ilogistics.PhoneNumberActivity"
             android:label="@string/title_activity_phone_number" >
         </activity>
+
+        <activity android:name="com.compass.activity.BarCodeInformationActivity"/>
 
     </application>
 
