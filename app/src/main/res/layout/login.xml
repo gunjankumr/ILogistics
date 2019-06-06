@@ -130,6 +130,7 @@
                             android:drawableLeft="@android:drawable/ic_lock_idle_lock"
                             android:onClick="onButtonClicker"
                             android:text="@string/login"
+                            android:textColor="#ffffff"
                             android:textSize="18sp" />
 
                     </LinearLayout>
@@ -289,6 +290,7 @@
                             android:onClick="onButtonClicker"
                             android:layout_marginTop="@dimen/screen_margin"
                             android:layout_gravity="center_horizontal"
+                            android:textColor="#ffffff"
                             android:text="@string/task"
                             android:textSize="18sp" />
 
@@ -427,6 +429,7 @@
                     android:drawableLeft="@android:drawable/ic_lock_idle_lock"
                     android:onClick="onButtonClicker"
                     android:text="@string/menu_assign"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
             </LinearLayout>
 

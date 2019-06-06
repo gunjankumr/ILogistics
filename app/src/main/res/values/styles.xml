@@ -4,6 +4,11 @@
         <item name="android:windowBackground">@color/light_grey</item>
     </style>
 
+    <style name="iLogisticAppThemeNew" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
     <style name="customTextView" parent="@android:style/Widget.TextView">
  	    <item name="android:textSize">22sp</item>
     </style>

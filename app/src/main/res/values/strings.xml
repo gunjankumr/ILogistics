@@ -34,6 +34,9 @@
     <string name="complete">Complete</string>
     <string name="save">Save</string>
     <string name="remarkJobRoute">remark</string>
+    <string name="note">Note</string>
+    <string name="problem">Problem</string>
+
 
 
     <!-- TEXTVIEW PROMPT -->
