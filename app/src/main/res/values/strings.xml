@@ -8,6 +8,13 @@
     <string name="login_title">Login</string>
     <string name="device_registration">Device Registration</string>
 
+    <!-- DEVICE SETUP -->
+
+    <string name="missing_device_registration">This phone is not registered</string>
+    <string name="contact_admin">Please contact Administrator</string>
+    <string name="copyright">© 2019 Compass Software Co. Ltd. All right reserved</string>
+
+
     <!-- MENU -->
     <string name="menu">Menu</string>
     <string name="menu_admin">Admin</string>

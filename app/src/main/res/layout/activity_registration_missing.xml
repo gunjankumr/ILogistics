@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.compass.activity_registration_missing">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp">
+            <ImageView android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_delete_new"
+                android:layout_gravity="center"
+                android:paddingTop="100dp"
+                android:id="@+id/userDp"/>
+
+        <TextView
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/missing_device_registration"
+            android:layout_marginBottom="@dimen/component_margin_8dp"
+            android:textColor="#9f9f9f"
+            android:textStyle="Text"
+            android:typeface="SukhumvitSet"
+            android:layout_gravity="center"
+            android:paddingTop="5dp" />
+
+        <TextView
+            style="@android:style/TextAppearance.DeviceDefault.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_admin"
+            android:layout_marginBottom="@dimen/component_margin_8dp"
+            android:textColor="#9f9f9f"
+            android:textStyle="Text"
+            android:typeface="SukhumvitSet"
+            android:layout_gravity="center"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+    
+</android.support.constraint.ConstraintLayout>
