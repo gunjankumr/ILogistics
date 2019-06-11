@@ -41,4 +41,23 @@
             android:paddingTop="5dp" />
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:text="@string/copyright"
+            android:layout_height="30dp"
+            android:gravity="center|bottom"
+            android:textStyle="Text"
+            android:typeface="Sukhumvit"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="10dp"/>
+
+    </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>
