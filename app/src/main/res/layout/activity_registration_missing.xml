@@ -9,8 +9,7 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="5dp">
+        android:layout_height="wrap_content">
             <ImageView android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -24,10 +23,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/missing_device_registration"
-            android:layout_marginBottom="@dimen/component_margin_8dp"
             android:textColor="#9f9f9f"
             android:textStyle="Text"
-            android:typeface="SukhumvitSet"
+            android:typeface="Sukhumvit"
             android:layout_gravity="center"
             android:paddingTop="5dp" />
 
@@ -36,12 +34,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/contact_admin"
-            android:layout_marginBottom="@dimen/component_margin_8dp"
             android:textColor="#9f9f9f"
             android:textStyle="Text"
-            android:typeface="SukhumvitSet"
+            android:typeface="Sukhumvit"
             android:layout_gravity="center"
             android:paddingTop="5dp" />
     </LinearLayout>
-    
+
 </android.support.constraint.ConstraintLayout>
